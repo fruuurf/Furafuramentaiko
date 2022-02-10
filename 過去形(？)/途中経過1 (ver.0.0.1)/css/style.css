@@ -1,0 +1,14 @@
+span.sample1 {
+    font-family: "Century Gothic";
+}
+
+body {
+    background: linear-gradient(-135deg, #00ff00, #0089ff);
+}
+
+hr {
+    height: 5px;
+    background-color: Black;
+    width: 100%;
+    border: none;
+}

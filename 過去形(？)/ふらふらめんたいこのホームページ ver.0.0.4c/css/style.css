@@ -1,0 +1,57 @@
+.body {
+    
+    user-select: none;
+}
+
+.hr {
+    height: 5px;
+    background-color: Black;
+    width: 100%;
+    border: none;
+}
+
+.bo {
+    height: 5px;
+    background-color: rgb(50, 50, 50);
+    width: 100%;
+    border: none;
+}
+
+.タイトル {
+    user-select: none;
+    text-shadow:0.5px 0 5px rgb(50, 50, 50);
+    background: linear-gradient(-135deg, #00ff00, #0089ff);
+    font-family: "Century Gothic","游ゴシック Light","ヒラギノ角ゴ Pro W3";
+}
+
+.font {
+    user-select: none;
+    color: rgb(50, 50, 50);
+    font-family: "Century Gothic","游ゴシック Light","ヒラギノ角ゴ Pro W3";
+}
+
+.いちばんうえのメニュー {
+    display: flex;
+    list-style: none;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    margin-top: 34px;
+    font-family: "Yu Gothic Medium","游ゴシック Medium",YuGothic,"游ゴシック体","ヒラギノ角ゴ Pro W3",sans-serif;
+   }
+   .いちばんうえのメニュー li {
+    margin-left: 36px;
+}
+
+.いちばんうえのメニュー li a {
+    color: #432;
+    text-decoration: none;
+}
+
+.いちばんうえのメニュー li a:hover {
+        
+    color: rgb(0, 140, 255);
+}
+
+.日記のための背景 {
+    background: linear-gradient(-135deg, #00ff00, #0089ff);
+}

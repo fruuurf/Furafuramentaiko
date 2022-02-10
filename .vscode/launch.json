@@ -1,0 +1,12 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+    
+        {
+            "type": "firefox",
+            "request": "launch",
+            "name": "Launch Chrome against localhost",            
+            "file": "${workspaceRoot}/Home.html"
+        }
+    ]
+    }
