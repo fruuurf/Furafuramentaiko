@@ -3,14 +3,6 @@ body {
     background-color:#f6f5f4;
 }
  
-a{
-  text-decoration: none;
-}
-
-a:hover{
-  text-decoration:underline;
-}
-
 #wrapper {
   width: 1000px;
   margin: 0 auto;

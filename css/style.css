@@ -25,8 +25,10 @@ body {
     margin:0;
 }
 
-.a {
+a{
     text-decoration: none;
+    color:#0089ff;
+    font-weight:100;
 }
 
 .ふぉんと {
@@ -61,10 +63,45 @@ body {
     margin:1vh 0;
 }
 
+.ふぉんと h4 {
+    font-size: 2vh;
+    font-weight:700;
+    line-height: 1;
+    margin:1vh 0;
+}
+
 .ふぉんと p {
     font-size: 2vh;
     line-height: 1;
     margin:1vh 0;
+}
+
+@media screen and (max-width:425px){
+    .ふぉんと h1 {
+        font-size: 7vh;
+        font-weight: 700;
+        line-height: 1;
+    }
+    
+    .ふぉんと h2 {
+        font-size: 3vh;
+        font-weight: 700;
+        line-height: 1;
+    }
+    
+    .ふぉんと h3 {
+        font-size: 3vh;
+        font-weight:100;
+        line-height: 1;
+        margin:1vh 0;
+    }
+
+    .ふぉんと h4 {
+        font-size: 2vh;
+        font-weight:700;
+        line-height: 1;
+        margin:1vh 0;
+    }
 }
 
 .pink {
@@ -96,6 +133,15 @@ body {
     color: #FFFFFF;
 }
 
+.タイトル_index {
+    padding-top:5.25em;
+    padding-bottom:0.5em;
+    background: linear-gradient(-135deg, #00ff00, #0089ff);
+    text-shadow:0.5px 0 5px rgb(50, 50, 50);
+    text-align: center;
+    color: #FFFFFF;
+}
+
 .タイトル文字 {
     user-select: none;
     font-size:300%;
@@ -112,9 +158,112 @@ body {
     font-weight: bold;
 }
 
+@media screen and (max-width:425px){
+    .タイトル {
+        padding-top:3em;
+        padding-bottom:0.5em;
+        background: linear-gradient(-135deg, #00ff00, #0089ff);
+        text-shadow:0.5px 0 5px rgb(50, 50, 50);
+        text-align: center;
+        color: #FFFFFF;
+    }
+    .タイトル_index {
+        position: fixed;
+        width:100%;
+        padding:0.5em 0.25em;
+        box-shadow:0px 0px 25px #000000;
+        background: linear-gradient(-135deg, #00ff00, #0089ff);
+        text-shadow:0.5px 0 5px rgb(50, 50, 50);
+        text-align: center;
+        color: #FFFFFF;
+    }
+    .タイトル文字 {
+        user-select: none;
+        font-size:100%;
+        font-weight:100;
+        font-size: 1.25em;
+        font-weight: bolder;
+    }
+    .バージョン {
+        font-family: 'Century Gothic','Noto Sans JP','ヒラギノ角ゴ ProN','meiryo','メイリオ', sans-serif;
+        font-weight: bold;
+        font-style: italic;
+        user-select: none;
+        font-size:75%;
+        font-weight: bold;
+    }
+}
+
 .ヘッダー{
     position: fixed;
     width:100%;
+}
+
+@media screen and (max-width:425px){
+    .ヘッダー{
+        display:none;
+    }
+}
+
+
+.スマホ用メニュー{
+    display: none;
+}
+
+@media screen and (max-width:425px){
+    .スマホ用メニュー{
+        position: fixed;
+        display: block;
+        width:100%;
+        font-size:1.75em;
+        box-shadow:0px 0px 25px #000000;
+        background:#FFFFFF;
+        padding:0;
+        margin:0;
+        list-style: none;
+        transition:5s;
+    }
+    
+    .スマホ用メニュー summary{
+        display: block;
+        list-style: none;
+        height:5vh;
+    }
+
+    .スマホ用メニュー summary img{
+        width:100%;
+    }
+    
+    .スマホ用メニュー summary::-webkit-details-marker{
+        display:none;
+    }
+    
+    .スマホ用メニュー a{
+        text-decoration: none;
+        text-transform: uppercase;
+        color:#4b4b4b;
+    }
+}
+
+.スマホ用空白{
+    display:none;
+    padding-bottom: 0.5em;
+}
+
+.スマホ用空白_index{
+    display:none;
+    padding-bottom: 2em;
+}
+
+@media screen and (max-width:425px){
+    .スマホ用空白{
+        display:block;
+        padding-bottom: 0.5em;
+    }
+    .スマホ用空白_index{
+        display:block;
+        padding-bottom: 2em;
+    }
 }
 
 .いちばんうえのメニュー {
@@ -123,13 +272,23 @@ body {
     background: #FFFFFF;
     text-align: center;
     text-transform: uppercase;
-   }
-   .いちばんうえのメニュー li {
+}
+
+.いちばんうえのメニュー li {
     font-size: 3vh;
-    padding-top: 1em;
-    padding-bottom: 1em;
+    margin-top: auto;
+    margin-bottom: auto;
     margin-left: 1.5em;
-   }
+}
+
+@media screen and (max-width:1280px){
+    .いちばんうえのメニュー li{
+        font-size: 2.5vh;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left: 1em;
+    }
+}
 
 .いちばんうえのメニュー li a {
     color: rgb(25, 25, 25);
@@ -137,6 +296,40 @@ body {
 }
 
 .いちばんうえのメニュー li a:hover {
+        
+    color: rgb(0, 140, 255);
+}
+
+.いちばんうえのメニュー_index {
+    display:flex;
+    list-style: none;
+    background: #FFFFFF;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.いちばんうえのメニュー_index li {
+    font-size: 3vh;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 1.5em;
+}
+
+@media screen and (max-width:1280px){
+    .いちばんうえのメニュー_index li{
+        font-size: 2.5vh;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        margin-left: 1em;
+    }
+}
+
+.いちばんうえのメニュー_index li a {
+    color: rgb(25, 25, 25);
+    text-decoration: none;
+}
+
+.いちばんうえのメニュー_index li a:hover {
         
     color: rgb(0, 140, 255);
 }
@@ -175,9 +368,9 @@ body {
     text-transform: uppercase;
     margin-top: 25px;
     margin-bottom: 25px;
-    }
-    .いちばんしたのメニュー li {
-        margin-left: 36px;
+}
+.いちばんしたのメニュー li {
+    margin-left: 36px;
 }
 
 .いちばんしたのメニュー li a {
@@ -190,6 +383,20 @@ body {
     color: rgb(0, 140, 255);
 }
 
+@media screen and (max-width:425px){
+    .いちばんしたのメニュー{
+        display: block;
+        list-style: none;
+        font-size: 2rem;
+        text-transform: uppercase;
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+    .いちばんしたのメニュー li {
+        margin-left:0px;
+    }
+}
+
 .ｺﾝﾆﾁﾜ {
     display: inline-block;
     cursor: pointer;
@@ -198,7 +405,15 @@ body {
     color:#FFFFFF;
     background-color: #4b4b4b;
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 0.5em;
+}
+
+@media screen and (max-width:425px){
+    .ｺﾝﾆﾁﾜ {
+        width: 50%;
+        padding: 25px;
+        font-size: 1.5em;
+    }
 }
 
 .ｺﾝﾆﾁﾜ:hover {
@@ -212,13 +427,26 @@ body {
     background: #0089ff;
     font-weight: bold;
     padding: 2vh 5vh;
-    margin:0.5em;
-    border-radius: 5px;
+    border-radius: 0.5em;
 }
 
 .ボタン:hover {
     background: #0070c0;
     color: #FFFFFF;
+}
+
+@media screen and (max-width:425px){
+    .ボタン {
+        display:block;
+        text-decoration: none;
+        color: white;
+        background: #0089ff;
+        font-size: 1.5em;
+        font-weight: bold;
+        padding: 1.5vh 0px;
+        border-radius: 0.5em;
+        margin:0.5em;
+    }
 }
 
 .画像付ボタン {
@@ -234,14 +462,14 @@ body {
     font-size:1em;
     padding:1em;
     margin:0.25em;
-    border-radius:0px 5px 5px 0px;
+    border-radius:0px 0.5em 0.5em 0px;
 }
 
 .画像付ボタン_画像{
     width: 4em;
     height: 4em;
     margin:0.25em;
-    border-radius:5px 0px 0px 5px;
+    border-radius:0.5em 0px 0px 0.5em;
 }
 
 .画像付ボタン_文:hover {
@@ -274,7 +502,7 @@ body {
     color: white;
     background: #0089ff;
     font-weight: bold;
-    border-radius:5px 5px 0px 0px;
+    border-radius:0.5em 0.5em 0px 0px;
 }
 
 .縦並び用ボタン#start:hover {
@@ -291,12 +519,24 @@ body {
     color: white;
     background: #0089ff;
     font-weight: bold;
-    border-radius:0px 0px 5px 5px;
+    border-radius:0px 0px 0.5em 0.5em;
 }
 
 .縦並び用ボタン#end:hover {
     background: #0070c0;
     color: #FFFFFF;
+}
+
+@media screen and (max-width:425px){
+    .縦並び用ボタン {
+        width:50%;
+    }
+    .縦並び用ボタン#start {
+        width:50%;
+    }
+    .縦並び用ボタン#end {
+        width:50%;
+    }
 }
 
 .logo {
@@ -317,6 +557,24 @@ body {
     text-align: left;
     margin:0 auto;
 }
+
+.中央寄せの左寄せ#対応機種{
+    width:40%;
+    text-align: left;
+    margin:0 auto;
+}
+
+@media screen and (max-width:425px){
+    .中央寄せの左寄せ{
+        width:90%;
+        text-align: left;
+        margin:0 auto;
+    }
+    .中央寄せの左寄せ#対応機種{
+        width:90%;
+    }
+}
+
 
 .PC環境{
     border-top:2px rgb(75, 75, 75) solid;
@@ -344,10 +602,12 @@ body {
 }
 
 .戻る{
+    position:absolute;
+    left:0;
     background:#0089ff ;
     border-radius:0 0 0.5em 0;
     color:#FFFFFF;
-    margin-right:88.6%;
+    margin-right:auto;
     text-align: left;
     font-size: 2.5vh;
     font-weight: 700;
@@ -356,6 +616,12 @@ body {
 
 .デスクトップ背景配布ページ{
     width:90vw;
+}
+
+@media screen and (max-width:425px){
+    .デスクトップ背景配布ページ td{
+        display: block;
+    }
 }
 
 .デスクトップ背景{
@@ -394,14 +660,45 @@ body {
     font-weight: bold;
 }
 
+.green{
+    color:#00ff00;
+    font-weight: bold;
+}
+
 .td空白{
     border:none;
 }
 
 #ウクライナ{
-    padding:1em 0px;
+    display: inline-block;
+    padding:1em 2em;
     background:linear-gradient(to bottom,#3b76c5 50%,#fadf17 50%);
-    width:50%;
-    border-radius: 1em;
+    border-radius: 2em;
     margin:0px auto;
+}
+
+@media screen and (max-width:425px){
+    #ウクライナ{
+        padding:1em 0px;
+        background:linear-gradient(to bottom,#3b76c5 50%,#fadf17 50%);
+        width:90%;
+        border-radius: 2em;
+        margin:0px auto;
+    }
+}
+
+#生存報告{
+    padding:1em 0px;
+    background:linear-gradient(to bottom,#ff0000,#ff7d7d);
+    width:40%;
+    margin:0px auto;
+}
+
+@media screen and (max-width:425px){
+    #生存報告{
+        padding:1em 0px;
+        background:linear-gradient(to bottom,#ff0000,#ff7d7d);
+        width:90%;
+        margin:0px auto;
+    }
 }

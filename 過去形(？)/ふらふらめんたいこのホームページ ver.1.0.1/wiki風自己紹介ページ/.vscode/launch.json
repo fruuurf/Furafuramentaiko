@@ -3,10 +3,10 @@
     "configurations": [
     
         {
-            "type": "firefox",
+            "type": "edge",
             "request": "launch",
             "name": "Launch Chrome against localhost",            
-            "file": "${workspaceRoot}/index.html"
+            "file": "${workspaceRoot}/wiki風自己紹介ページ.html"
         }
     ]
     }
