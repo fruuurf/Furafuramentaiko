@@ -53,7 +53,7 @@ a{
 .ふぉんと h2 {
     font-size: 5vh;
     font-weight: 700;
-    line-height:1;
+    line-height: 0.75;
 }
 
 .ふぉんと h3 {
@@ -122,18 +122,6 @@ a{
 
 .bold{
     font-weight: 700;
-}
-
-.下線{
-    border-bottom:#0089ff 10px solid;
-}
-
-.緑下線{
-    border-bottom:#00ff00 10px solid;
-}
-
-.左揃え{
-    text-align: left;
 }
 
 .タイトル {
@@ -587,15 +575,6 @@ a{
     }
 }
 
-.４：３とか用{
-    display:none;
-}
-
-@media screen and (max-width:1280px){
-    .４：３とか用{
-        display: block;
-    }
-}
 
 .PC環境{
     border-top:2px rgb(75, 75, 75) solid;
@@ -666,69 +645,6 @@ a{
     margin:0px;
 }
 
-.構文{
-    border-collapse: collapse;
-    margin:0px 5%;
-    text-align:left;
-}
-
-.構文 td{
-    border:4px solid #4b4b4b;
-    padding:0.5em;
-    margin:0px;
-    width:15%;
-}
-
-.構文 td#標準t{
-    background-color: #c8c8c8;
-    text-align: center;
-}
-
-.構文 td#ふらめん構文t{
-    background-color: #0089ff;
-    text-align: center;
-}
-
-.構文 td#みつる構文t{
-    background-color: #00ff00;
-    text-align: center;
-}
-
-.構文 td#sspeed構文t{
-    background-color: #00ff00;
-    text-align: center;
-}
-
-.構文 td#標準{
-    background:linear-gradient(90deg,#FFFFFF 90%,#c8c8c8 10%);
-}
-
-.構文 td#ふらめん構文{
-    background:linear-gradient(90deg,#FFFFFF 90%,#0089ff 10%);
-}
-
-.構文 td#みつる構文{
-    background:linear-gradient(90deg,#FFFFFF 90%,#00ff00 10%);
-}
-
-.構文 td#sspeed構文{
-    background:linear-gradient(90deg,#FFFFFF 90%,#00ff00 10%);
-}
-
-@media screen and (max-width:425px){
-    .構文{
-        border-collapse: collapse;
-        margin:0px 1em;
-        text-align:left;
-    }
-    .構文 td{
-        border:4px solid #4b4b4b;
-        padding:0.5em;
-        margin:0px;
-        width:15%;
-    }
-}
-
 .red{
     color:#ff0000;
     font-weight: bold;
@@ -767,6 +683,22 @@ a{
         background:linear-gradient(to bottom,#3b76c5 50%,#fadf17 50%);
         width:90%;
         border-radius: 2em;
+        margin:0px auto;
+    }
+}
+
+#生存報告{
+    padding:1em 0px;
+    background:linear-gradient(to bottom,#ff0000,#ff7d7d);
+    width:40%;
+    margin:0px auto;
+}
+
+@media screen and (max-width:425px){
+    #生存報告{
+        padding:1em 0px;
+        background:linear-gradient(to bottom,#ff0000,#ff7d7d);
+        width:90%;
         margin:0px auto;
     }
 }
