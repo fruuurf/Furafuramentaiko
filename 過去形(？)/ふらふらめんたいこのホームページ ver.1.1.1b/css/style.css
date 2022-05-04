@@ -8,8 +8,6 @@ body {
     font-size:16px;
     margin:0px;
     padding:0px;
-    background-color: var(--white-color);
-    transition:0.25s;
 }
 
 .hr {
@@ -21,8 +19,7 @@ body {
 
 .bo {
     height: 5px;
-    background-color: var(--bo);
-    transition:0.25s;
+    background-color: rgb(50, 50, 50);
     width: 100%;
     border: none;
     margin:0;
@@ -38,8 +35,7 @@ a{
     font-family: 'Noto Sans JP','ヒラギノ角ゴ ProN','meiryo','メイリオ', sans-serif;
     font-weight: 100;
     text-align: center;
-    color: var(--white-text);
-    transition:0.25s;
+    color: rgb(25, 25, 25);
 }
 
 .クソデカ {
@@ -140,24 +136,6 @@ a{
     text-align: left;
 }
 
-:root{
-    --white-text:#000000;
-    --white-color:#ffffff;
-    --menu:#ffffff;
-    --bo:#323232;
-    --dark:#4b4b4b;
-}
-
-@media (prefers-color-scheme: dark){
-    :root{
-        --white-text:#ffffff;
-        --white-color:#323232;
-        --menu:#4b4b4b;
-        --bo:#ffffff;
-        --dark:#969696;
-    }
-}
-
 .タイトル {
     padding-top:5.25em;
     padding-bottom:0.5em;
@@ -251,8 +229,7 @@ a{
         width:100%;
         font-size:1.75em;
         box-shadow:0px 0px 25px #000000;
-        background-color: var(--white-color);
-        transition:0.25s;
+        background:#FFFFFF;
         padding:0;
         margin:0;
         list-style: none;
@@ -304,8 +281,7 @@ a{
 .いちばんうえのメニュー {
     display:flex;
     list-style: none;
-    background-color: var(--menu);
-    transition:0.25s;
+    background: #FFFFFF;
     text-align: center;
     text-transform: uppercase;
 }
@@ -327,8 +303,7 @@ a{
 }
 
 .いちばんうえのメニュー li a {
-    color: var(--white-text);
-    transition:0.25s;
+    color: rgb(25, 25, 25);
     text-decoration: none;
 }
 
@@ -340,8 +315,7 @@ a{
 .いちばんうえのメニュー_index {
     display:flex;
     list-style: none;
-    background-color: var(--menu);
-    transition:0.25s;
+    background: #FFFFFF;
     text-align: center;
     text-transform: uppercase;
 }
@@ -363,7 +337,7 @@ a{
 }
 
 .いちばんうえのメニュー_index li a {
-    color: var(--white-text);
+    color: rgb(25, 25, 25);
     text-decoration: none;
 }
 
@@ -396,8 +370,7 @@ a{
 }
 
 .ちょい薄{
-    background-color: var(--menu);
-    transition:0.25s;
+    background: #ebebeb;
 }
 
 .いちばんしたのメニュー{
@@ -413,7 +386,7 @@ a{
 }
 
 .いちばんしたのメニュー li a {
-    color: var(--white-text);
+    color: rgb(25, 25, 25);
     text-decoration: none;
 }
 
@@ -442,7 +415,7 @@ a{
     width: 10%;
     text-align: center;
     color:#FFFFFF;
-    background-color:var(--dark);
+    background-color: #4b4b4b;
     padding: 10px;
     border-radius: 0.5em;
 }
@@ -456,7 +429,7 @@ a{
 }
 
 .ｺﾝﾆﾁﾜ:hover {
-    background-color:#646464;
+    background-color: #646464;
 }
 
 .ボタン {
@@ -638,25 +611,25 @@ a{
     }
 }
 
-.環境{
-    border-top:2px var(--bo) solid;
-    border-bottom:2px var(--bo) solid;
+.PC環境{
+    border-top:2px rgb(75, 75, 75) solid;
+    border-bottom:2px rgb(75, 75, 75) solid;
 }
 
-.環境 summary{
+.PC環境 summary{
     font-size: 3vh;
     line-height: 6vh;
     padding:0 0.5em;
 }
 
-.環境#start{
-    border-top:4px var(--bo) solid;
-    border-bottom:2px var(--bo) solid;
+.PC環境#start{
+    border-top:4px rgb(75, 75, 75) solid;
+    border-bottom:2px rgb(75, 75, 75) solid;
 }
 
-.環境#end{
-    border-top:2px var(--bo) solid;
-    border-bottom:4px var(--bo) solid;
+.PC環境#end{
+    border-top:2px rgb(75, 75, 75) solid;
+    border-bottom:4px rgb(75, 75, 75) solid;
 }
 
 .日記のための背景 {
@@ -702,7 +675,7 @@ a{
 }
 
 .対応機種 td{
-    border:4px solid var(--dark);
+    border:4px solid #4b4b4b;
     padding:0.5em;
     margin:0px;
 }
@@ -714,7 +687,7 @@ a{
 }
 
 .構文 td{
-    border:4px solid var(--dark);
+    border:4px solid #4b4b4b;
     padding:0.5em;
     margin:0px;
     width:15%;
@@ -741,19 +714,19 @@ a{
 }
 
 .構文 td#標準{
-    background:linear-gradient(90deg,var(--white-color) 90%,#c8c8c8 10%);
+    background:linear-gradient(90deg,#FFFFFF 90%,#c8c8c8 10%);
 }
 
 .構文 td#ふらめん構文{
-    background:linear-gradient(90deg,var(--white-color) 90%,#0089ff 10%);
+    background:linear-gradient(90deg,#FFFFFF 90%,#0089ff 10%);
 }
 
 .構文 td#みつる構文{
-    background:linear-gradient(90deg,var(--white-color) 90%,#00ff00 10%);
+    background:linear-gradient(90deg,#FFFFFF 90%,#00ff00 10%);
 }
 
 .構文 td#sspeed構文{
-    background:linear-gradient(90deg,var(--white-color) 90%,#00ff00 10%);
+    background:linear-gradient(90deg,#FFFFFF 90%,#00ff00 10%);
 }
 
 @media screen and (max-width:425px){
@@ -763,7 +736,7 @@ a{
         text-align:left;
     }
     .構文 td{
-        border:4px solid var(--dark);
+        border:4px solid #4b4b4b;
         padding:0.5em;
         margin:0px;
         width:15%;
