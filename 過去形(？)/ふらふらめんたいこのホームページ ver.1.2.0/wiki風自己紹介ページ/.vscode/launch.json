@@ -1,0 +1,12 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+    
+        {
+            "type": "edge",
+            "request": "launch",
+            "name": "Launch Chrome against localhost",            
+            "file": "${workspaceRoot}/wiki風自己紹介ページ.html"
+        }
+    ]
+    }
