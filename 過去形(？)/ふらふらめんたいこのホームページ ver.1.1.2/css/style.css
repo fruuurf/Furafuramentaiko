@@ -146,9 +146,6 @@ a{
     --menu:#ffffff;
     --bo:#323232;
     --dark:#4b4b4b;
-    --newsdiary:#e1e1e1;
-    --newsdiary2:#969696;
-    --ukr:#ffffff;
 }
 
 @media (prefers-color-scheme: dark){
@@ -158,9 +155,6 @@ a{
         --menu:#4b4b4b;
         --bo:#ffffff;
         --dark:#969696;
-        --newsdiary:#4b4b4b;
-        --newsdiary2:#232323;
-        --ukr:#232323;
     }
 }
 
@@ -282,7 +276,7 @@ a{
     .スマホ用メニュー a{
         text-decoration: none;
         text-transform: uppercase;
-        color:var(--white-text);
+        color:#4b4b4b;
     }
 }
 
@@ -328,7 +322,7 @@ a{
         font-size: 2.5vh;
         margin-top: auto;
         margin-bottom: auto;
-        margin-left: 0.75em;
+        margin-left: 1em;
     }
 }
 
@@ -597,52 +591,6 @@ a{
     font-size: 100%;
 }
 
-.お知らせ{
-    background:linear-gradient(135deg,#0089ff 38%,#4bafff 38%);
-    border-radius: 1em;
-    box-shadow:0px 0px 0.5em #000000;
-    width:40%;
-    margin:auto;
-    text-align: left;
-}
-
-@media screen and (max-width:1280px){
-    .お知らせ{
-        background:linear-gradient(135deg,#0089ff 37%,#4bafff 37%);
-        width:50%;
-    }
-}
-
-@media screen and (max-width:425px){
-    .お知らせ{
-        background:#0089ff;
-        width:90%;
-        text-align: center;
-    }
-    .お知らせ文字{
-        padding-left:0px;
-    }
-    .お知らせタイトル{
-        display: none;
-    }
-}
-
-.お知らせ文字{
-    font-size: 3em;
-    font-weight: bold;
-    padding-left:0.25em;
-}
-
-.お知らせタイトル{
-    font-size: 1em;
-    font-weight: bold;
-    padding-left:1em;
-}
-
-#お知らせ{
-    color:#ffffff;
-}
-
 .中央寄せの左寄せ{
     width:50%;
     text-align: left;
@@ -748,21 +696,6 @@ a{
     font-size:1em;
 }
 
-.過去バージョン棒{
-    margin:0.5em auto;
-    padding-bottom:0.25em;
-    border-bottom:0.5em #ff0000 solid;
-    width:25%;
-    font-size: 1em;
-    font-weight: bold;
-}
-
-@media screen and (max-width:425px){
-    .過去バージョン棒{
-        width:85%;
-    }
-}
-
 .対応機種{
     border-collapse: collapse;
     margin:0px auto;
@@ -837,35 +770,6 @@ a{
     }
 }
 
-.お知らせ日記{
-    text-align: left;
-    width:25%;
-    padding:0.5em;
-    margin:auto;
-    background:var(--newsdiary);
-    border:0.25em var(--newsdiary2) solid; 
-}
-
-@media screen and (max-width:1280px){
-    .お知らせ日記{
-        width:40%;
-    }
-}
-
-@media screen and (max-width:425px){
-    .お知らせ日記{
-        width:90%;
-    }
-}
-
-#お知らせ日記{
-    color: var(--white-text);
-}
-
-#お知らせ日記:hover{
-    text-decoration:underline;
-}
-
 .red{
     color:#ff0000;
     font-weight: bold;
@@ -890,12 +794,11 @@ a{
     border:none;
 }
 
-#ウクライナ{
+#ウクライナ1{
     display: block;
     padding:0.5em;
-    color:var(--ukr);
-    background:linear-gradient(#3b76c5 50%,#fadf17 50%);
-    border-radius:2em;
+    background:#3b76c5;
+    border-radius:2em 2em 0px 0px;
     margin:0px auto;
     width:75%;
 }
@@ -904,9 +807,28 @@ a{
     #ウクライナ{
         display: block;
         padding:0.5em;
-        color:var(--ukr);
-        background:linear-gradient(#3b76c5 50%,#fadf17 50%);
-        border-radius:2em;
+        background:#3b76c5;
+        border-radius:2em 2em 0px 0px;
+        margin:0px auto;
+        width:90%;
+    }
+}
+
+#ウクライナ2{
+    display:block;
+    padding:0.5em;
+    background:#fadf17;
+    border-radius:0px 0px 2em 2em;
+    margin:0px auto;
+    width:75%;
+}
+
+@media screen and (max-width:425px){
+    #ウクライナ{
+        display:block;
+        padding:0.5em;
+        background:#fadf17;
+        border-radius:0px 0px 2em 2em;
         margin:0px auto;
         width:90%;
     }
