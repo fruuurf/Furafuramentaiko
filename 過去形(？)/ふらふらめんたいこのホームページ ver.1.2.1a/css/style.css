@@ -174,7 +174,7 @@ a{
 }
 
 .タイトル_index {
-    padding-top:11vh;
+    padding-top:5.25em;
     padding-bottom:0.5em;
     background: linear-gradient(-135deg, #00ff00, #0089ff);
     text-shadow:0.5px 0 5px rgb(50, 50, 50);
@@ -196,12 +196,6 @@ a{
     user-select: none;
     font-size:150%;
     font-weight: bold;
-}
-
-@media screen and (max-width:1280px){
-    .タイトル_index {
-        padding-top:9vh;
-    }
 }
 
 @media screen and (max-width:425px){
@@ -227,7 +221,7 @@ a{
         user-select: none;
         font-size:100%;
         font-weight:100;
-        font-size: 1.1em;
+        font-size: 1.25em;
         font-weight: bolder;
     }
     .バージョン {
@@ -290,44 +284,6 @@ a{
         text-transform: uppercase;
         color:var(--white-text);
     }
-}
-
-.スマホ用メニュー_index{
-    display: block;
-    width:100%;
-    box-shadow:0px 0px 25px #000000;
-    background-color: var(--white-color);
-    transition:0.25s;
-    padding:0;
-    margin-bottom:10em;
-    list-style: none;
-    transition:5s;
-}
-
-@media screen and (max-width:425px){
-    .スマホ用メニュー_index{
-        position: fixed;
-    }
-}
-
-.スマホ用メニュー_index summary{
-    display: block;
-    list-style: none;
-    height:5vh;
-}
-
-.スマホ用メニュー_index summary img{
-    width:100%;
-}
-
-.スマホ用メニュー_index summary::-webkit-details-marker{
-    display:none;
-}
-
-.スマホ用メニュー_index a{
-    text-decoration: none;
-    text-transform: uppercase;
-    color:var(--white-text);
 }
 
 .スマホ用空白{
@@ -816,12 +772,6 @@ a{
     border:4px solid var(--dark);
     padding:0.5em;
     margin:0px;
-}
-
-@media screen and (max-width:425px){
-    .対応機種{
-        margin: 0.5em;
-    }
 }
 
 .構文{
