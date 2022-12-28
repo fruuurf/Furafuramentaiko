@@ -34,12 +34,30 @@ a{
     font-weight:100;
 }
 
+#Er404{
+    text-align: center;
+    font-family: 'Century Gothic','Futura','Noto Sans JP','ヒラギノ角ゴ ProN','meiryo','メイリオ', sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    user-select: none;
+    font-size:40vh;
+    color: var(--white-text)
+}
+
+#Er404v{
+    width:100%;
+    position: absolute;
+    z-index: -1;
+    animation: fadeout 0.5s ease 12s;
+}
+
+@keyframes fadeOut{}
+
 .ふぉんと {
     font-family: 'Noto Sans JP','ヒラギノ角ゴ ProN','meiryo','メイリオ', sans-serif;
     font-weight: 100;
     text-align: center;
-    color: var(--white-text);
-    transition:0.25s;
+    color:var(--white-text);
 }
 
 .クソデカ {
@@ -189,8 +207,8 @@ a{
     font-weight: bolder;
 }
 
-.バージョン {
-    font-family: 'Century Gothic','Noto Sans JP','ヒラギノ角ゴ ProN','meiryo','メイリオ', sans-serif;
+#バージョン {
+    font-family: 'Century Gothic','Futura','Noto Sans JP','ヒラギノ角ゴ ProN','meiryo','メイリオ', sans-serif;
     font-weight: bold;
     font-style: italic;
     user-select: none;
@@ -262,7 +280,7 @@ a{
         display: block;
         width:100%;
         font-size:1.75em;
-        box-shadow:0px 0px 25px #000000;
+        box-shadow:0px 0px 35px #000000;
         background-color: var(--white-color);
         transition:0.25s;
         padding:0;
@@ -295,7 +313,7 @@ a{
 .スマホ用メニュー_index{
     display: block;
     width:100%;
-    box-shadow:0px 0px 25px #000000;
+    box-shadow:0px 0px 35px #000000;
     background-color: var(--white-color);
     transition:0.25s;
     padding:0;
@@ -337,7 +355,7 @@ a{
 
 .スマホ用空白_index{
     display:none;
-    padding-bottom: 2em;
+    padding-bottom: 3em;
 }
 
 @media screen and (max-width:425px){
@@ -347,17 +365,18 @@ a{
     }
     .スマホ用空白_index{
         display:block;
-        padding-bottom: 2em;
+        padding-bottom: 3em;
     }
 }
 
 .いちばんうえのメニュー {
     display:flex;
     list-style: none;
-    background-color: var(--menu);
+    backdrop-filter:blur(25px);
     transition:0.25s;
     text-align: center;
     text-transform: uppercase;
+    box-shadow:0px 0px 35px #000000;
 }
 
 .いちばんうえのメニュー li {
@@ -390,10 +409,11 @@ a{
 .いちばんうえのメニュー_index {
     display:flex;
     list-style: none;
-    background-color: var(--menu);
+    backdrop-filter:blur(25px);
     transition:0.25s;
     text-align: center;
     text-transform: uppercase;
+    box-shadow:0px 0px 35px #000000;
 }
 
 .いちばんうえのメニュー_index li {
@@ -472,18 +492,63 @@ a{
     color: rgb(0, 140, 255);
 }
 
+.スマホ用いちばんしたのメニュー{
+    display: none;
+    list-style: none;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    text-align: left;
+}
+.スマホ用いちばんしたのメニュー li {
+    margin-left: 36px;
+}
+
+.スマホ用いちばんしたのメニュー li a {
+    color: var(--white-text);
+    text-decoration: none;
+}
+
+.スマホ用いちばんしたのメニュー li a:hover {
+        
+    color: rgb(0, 140, 255);
+}
+
 @media screen and (max-width:425px){
     .いちばんしたのメニュー{
-        display: block;
-        list-style: none;
-        font-size: 2rem;
-        text-transform: uppercase;
-        margin-top: 2em;
-        margin-bottom: 2em;
+        display:none;
     }
-    .いちばんしたのメニュー li {
-        margin-left:0px;
+    .スマホ用いちばんしたのメニュー{
+        display:block;
     }
+}
+
+.ロゴ共{
+    margin:0.75em auto;
+}
+
+.ロゴ共間隔{
+    margin:1em;
+}
+
+.下ロゴ共間隔{
+    margin:0.25em;
+}
+
+.下ロゴ共{
+    display:flex;
+    text-align: left;
+    margin:0 0 2em 2em;
+}
+
+.下文字{
+    font-family:'Century Gothic','Futura','Noto Sans JP','ヒラギノ角ゴ ProN','meiryo','メイリオ', sans-serif;
+    font-weight: bold;
+    font-size: 1.25em;
+    color:var(--white-text);
+    margin-left: auto;
+    margin-right:5vw;
 }
 
 .ｺﾝﾆﾁﾜ {
@@ -492,7 +557,7 @@ a{
     width: 10%;
     text-align: center;
     color:#FFFFFF;
-    background-color:var(--dark);
+    background-color:(--dark);
     padding: 10px;
     border-radius: 0.5em;
 }
@@ -517,6 +582,7 @@ a{
     font-weight: bold;
     padding: 2vh 5vh;
     border-radius: 0.5em;
+    margin:0.1em 0px;
 }
 
 .ボタン:hover {
@@ -538,6 +604,37 @@ a{
     }
 }
 
+.ボタン2 {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background: #0089ff;
+    font-weight: bold;
+    padding: 1vh;
+    border-radius: 0.5em;
+    margin:0.1em 0px;
+}
+
+.ボタン2:hover {
+    background: #0070c0;
+    color: #FFFFFF;
+}
+
+@media screen and (max-width:425px){
+    .ボタン2 {
+        display:block;
+        text-decoration: none;
+        color: white;
+        background: #0089ff;
+        font-size: 1.5em;
+        font-weight: bold;
+        padding: 1.5vh 0px;
+        border-radius: 0.5em;
+        margin:0.5em;
+        text-align: center;
+    }
+}
+
 .画像付ボタン {
     display:inline-flex;
     text-decoration: none;
@@ -545,25 +642,33 @@ a{
 
 .画像付ボタン_文 {
     text-decoration: none;
+    text-align: center;
     color: white;
     background: #0089ff;
     font-weight: bold;
     font-size:1em;
     padding:1em;
-    margin:0.25em;
+    margin:0.25em 0;
+    width: 20vw;
     border-radius:0px 0.5em 0.5em 0px;
 }
 
 .画像付ボタン_画像{
     width: 4em;
     height: 4em;
-    margin:0.25em;
+    margin:0.25em 0;
     border-radius:0.5em 0px 0px 0.5em;
 }
 
 .画像付ボタン_文:hover {
     background: #0070c0;
     color: #FFFFFF;
+}
+
+@media screen and (max-width:425px){
+    .画像付ボタン_文 {
+        width: 65vw;
+    }
 }
 
 .縦並び用ボタン {
@@ -644,7 +749,6 @@ a{
 .お知らせ{
     background:linear-gradient(135deg,#0089ff 38%,#4bafff 38%);
     border-radius: 1em;
-    box-shadow:0px 0px 0.5em #000000;
     width:40%;
     margin:auto;
     text-align: left;
@@ -688,13 +792,19 @@ a{
 }
 
 .中央寄せの左寄せ{
-    width:50%;
+    width:60%;
     text-align: left;
     margin:0 auto;
 }
 
 .中央寄せの左寄せ#対応機種{
     width:40%;
+    text-align: left;
+    margin:0 auto;
+}
+
+.中央寄せの左寄せ#相互リンク{
+    width:30%;
     text-align: left;
     margin:0 auto;
 }
@@ -706,6 +816,9 @@ a{
         margin:0 auto;
     }
     .中央寄せの左寄せ#対応機種{
+        width:90%;
+    }
+    .中央寄せの左寄せ#相互リンク{
         width:90%;
     }
 }
@@ -734,6 +847,82 @@ a{
     }
 }
 
+#YouTube{
+    width:5vw;
+    margin:0 0.75em;
+    color:var(--white-text);
+    font-size: 1em;
+}
+
+#YouTubeSub{
+    width:5vw;
+    margin:0 0.75em;
+    color:var(--white-text);
+    font-size: 1em;
+}
+
+#YouTubeLive{
+    width:5vw;
+    margin:0 0.75em;
+    color:var(--white-text);
+    font-size: 1em;
+}
+
+#Twitter{
+    width:3.75vw;
+    margin:0 0.75em 0.1em 0.75em;
+    color:var(--white-text);
+}
+
+#Discord{
+    width:3.75vw;
+    margin:0 0.75em 0.25em 0.75em;
+    color:var(--white-text);
+}
+
+#github{
+    width:3.75vw;
+    margin:2em 0.75em 0 0.75em;
+    color:var(--white-text);
+}
+
+#githubhome{
+    width:3.75vw;
+    margin:2em 0.75em 0 0.75em;
+    color:var(--white-text);
+    background:#969696;
+}
+
+#pixiv{
+    width:5vw;
+    margin:0.75em;
+    color:var(--white-text);
+}
+
+#scratch{
+    width:3.5vw;
+    margin:0.5em;
+    color:var(--white-text);
+}
+
+#YouTubebo,#Discordbo,#pixivbo{
+    width:3vw;
+    margin-right:2em;
+    color:var(--white-text);
+}
+
+#Twitterbo{
+    width:3vw;
+    margin:0 2em 0.1em 0;
+    color:var(--white-text);
+}
+
+#githubbo{
+    width:3vw;
+    margin:0 2em 0.75em 0;
+    color:var(--white-text);
+}
+
 .環境{
     border-top:2px var(--bo) solid;
     border-bottom:2px var(--bo) solid;
@@ -760,16 +949,20 @@ a{
 }
 
 .戻る{
-    position:absolute;
-    left:0;
-    background:#0089ff ;
-    border-radius:0 0 0.5em 0;
-    color:#FFFFFF;
+    position:fixed;
+    left:1em;
+    top:6em;
     margin-right:auto;
     text-align: left;
-    font-size: 2.5vh;
-    font-weight: 700;
-    text-decoration: none;
+    width: 5vw;
+}
+
+@media screen and (max-width:425px){
+    .戻る{
+        left:2vw;
+        top:6em;
+        width: 15vw;
+    }
 }
 
 .デスクトップ背景配布ページ{
