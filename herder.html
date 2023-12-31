@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>herder</title>
+</head>
+<body>
+    <div class="ふぉんと">
+        <div class="ヘッダー">
+            <div class="いちばんうえのメニュー_index">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">about</a></li>
+                <li><a href="いろいろ.html">いろいろ</a></li>
+                <li><a href="newsdiary.html">お知らせ/日記</a></li>
+                <li><a href="ただの自慢.html">ただの自慢</a></li>
+                <li><a href="相互リンク.html">相互リンク</a></li>
+                <li><a href="このサイトの詳細情報とか.html">このサイトの詳細情報とか</a></li>
+                <div class="YouTubeHead">
+                    <a href= "https://www.youtube.com/channel/UCjW2deKNgzlopDq_nrKwMoQ" target="_blank"><img src="css/images/youtube_social_icon_red.png" class="YouTubeHeadSize"><img src="css/images/yt_icon_mono_dark.png" class="YouTubeHeadSizeDark"></a></span>
+                </div>
+            </div>
+        </div>
+    
+    
+        <details class="スマホ用メニュー_index">    
+        <summary>
+            <div class="タイトル_index">
+                <span class="タイトル文字">
+                ふらふらめんたいこのホームページ</span>
+                <span id="バージョン">
+                Ver.1.3.1</span>
+            </div></summary>
+                <br>
+                <a href="index.html">home</a><br>
+                <a href="https://www.youtube.com/channel/UCjW2deKNgzlopDq_nrKwMoQ">youtube</a><br>
+                <a href="about.html">about</a><br>
+                <a href="いろいろ.html">いろいろ</a><br>
+                <li><a href="newsdiary.html">お知らせ/日記</a></li>
+                <a href="ただの自慢.html">ただの自慢</a><br>
+                <a href="このサイトの詳細情報とか.html">このサイトの詳細情報とか</a><br>
+                <br>
+        </details>
+    
+        <div class="スマホ用空白_index"></div>
+    
+        <script>
+            $(function(){
+                var 更新年 = new Date(document.lastModified).getFullYear();
+                var 更新月 = new Date(document.lastModified).getMonth()+1 < 10 ? '' + new Date(document.lastModified).getMonth()+1 : new Date(document.lastModified).getMonth()+1; 
+                var 更新日 = new Date(document.lastModified).getDate() < 10 ? '0' + new Date(document.lastModified).getDate() : new Date(document.lastModified).getDate();
+                var 更新 = 更新年 + "." + 更新月 + "." + 更新日;
+    
+                $('#バージョン')
+                .mouseover(function(e) {
+                    $("#バージョン").text(更新);
+                })
+                .mouseout(function(e) {
+                    $("#バージョン").text("Ver.1.3.1");
+                });
+            });
+        </script>
+    
+        <div class="スマホ用警告">
+            <br><br>
+            このサイトはスマホへの配慮不足のため、スマホで見るといろいろとレイアウト崩れが発生します。<br>
+            お許しを。
+        </div>
+</body>
+</html>

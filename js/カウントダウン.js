@@ -19,7 +19,14 @@ let カウントダウン = setInterval(function(){
     document.getElementById("秒").textContent  = 秒 < 10 ? '0' + 秒 : 秒;
     document.getElementById("コンマ").textContent  = コンマ < 10 ? '0' + コンマ : コンマ;
 
-    if(何年 ==2023 || 残り < 0) clearInterval(カウントダウン)
+    if(何年 == 2024 || 残り < 0){
+        clearInterval(カウントダウン);
+        document.getElementById("日").textContent  = '0';
+        document.getElementById("時間").textContent = '00';
+        document.getElementById("分").textContent  = '00';
+        document.getElementById("秒").textContent  = '00';
+        document.getElementById("コンマ").textContent  = '00';
+    }
 
 }, 10)
 

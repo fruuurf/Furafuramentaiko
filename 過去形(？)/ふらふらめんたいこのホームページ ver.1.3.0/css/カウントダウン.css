@@ -1,0 +1,80 @@
+:root{
+    --white-text:#000000;
+}
+
+@media (prefers-color-scheme: dark){
+    :root{
+        --white-text:#ffffff;
+    }
+}
+
+.カウントダウン文字{
+    font-family: 'Noto Sans JP','ヒラギノ角ゴ ProN','meiryo','メイリオ', sans-serif;
+    font-weight: bold;
+    font-size:5em;
+    background:linear-gradient(45deg,#0089ff,#0040ff,#b03bff,#f23bff,#ff4ad2,#ff2626,#fc8c1c,#f6fc47,#6cf542,#42f566,#0089ff,#0040ff,#b03bff,#f23bff,#ff4ad2,#ff2626,#fc8c1c,#f6fc47,#6cf542,#42f566);
+    background-size:1500% 1500%;
+    animation:bggradient 30s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    user-select: none;
+}
+
+@keyframes bggradient{
+    0%{
+        background-position:0% 100%;
+    }
+    100%{
+        background-position:83% 100%;
+    }
+}
+
+.カウントダウン文字2{
+    font-family: 'Noto Sans JP','ヒラギノ角ゴ ProN','meiryo','メイリオ', sans-serif;
+    font-weight: bold;
+    font-size:3em;
+    color:var(--white-text);
+    user-select: none;
+}
+
+.カウントダウン文字3{
+    font-family: 'Noto Sans JP','ヒラギノ角ゴ ProN','meiryo','メイリオ', sans-serif;
+    font-weight: bold;
+    font-size:0.5em;
+    color:var(--white-text);
+    user-select: none;
+}
+
+.カウントダウン{
+    font-family: 'Century Gothic','ヒラギノ角ゴ ProN','meiryo','メイリオ', sans-serif;
+    font-weight:bold;
+    font-size:7em;
+    color:var(--white-text);
+    user-select: none;
+}
+
+.現在時刻{
+    font-family: 'Century Gothic','ヒラギノ角ゴ ProN','meiryo','メイリオ', sans-serif;
+    font-weight:bold;
+    font-size:3em;
+    color:var(--white-text);
+    user-select: none;
+}
+
+.飛ぶぞ！{
+    position:fixed;
+    bottom:0px;
+    right:0px;
+    font-size:1.5em;
+    font-weight:bold;
+    background:#ffffff;
+    padding:1em;
+    border-top-left-radius:1em;
+    box-shadow:0px 0px 0.5em #000000;
+}
+
+.under{
+    font-size:1em;
+    margin:0 auto;
+    user-select:none;
+}
