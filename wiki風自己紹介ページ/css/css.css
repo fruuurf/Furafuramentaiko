@@ -55,31 +55,6 @@ a:hover{
   padding:20px;
 } 
 
-.複数の問題,.ふさわしくない内容{
-  padding:0.25em 0.5em;
-  border-right:1px #a2a9b1 solid;
-  border-top:1px #a2a9b1 solid;
-  border-bottom:1px #a2a9b1 solid;
-  border-left:0.5em #f28500 solid;
-  margin:0em auto 1em;
-  width:50%;
-}
-
-
-.複数の問題tx,.ふさわしくない内容tx{
-  text-align: left;
-  border:none;
-  font-size:14px;
-  background:#ffffff;
-}
-
-.複数の問題img,.ふさわしくない内容img{
-  display: inline-block;
-  border:none;
-  width:3em;
-  background:#ffffff;
-}
-
 .目次 {
   width:35%;
   background-color: #f8f9fa;
@@ -129,7 +104,7 @@ th {
 }
 
 .はたねさん {
-  background:rgb(33, 116, 0);
+  background:#ff0000;
   border:1px solid #a9a9a9;
 }
 
@@ -154,7 +129,7 @@ th {
 }
 
 .sspeed {
-  background: #007dff;
+  background: #00ff00;
   border:1px solid #a9a9a9;
 }
 
@@ -179,7 +154,6 @@ th {
 .画像 {
   border:1px solid #c8ccd1;
   padding:3px;
-  margin:2px 0;
   font-size:16px;
   display:inline-block;
 }
