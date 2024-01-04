@@ -8,14 +8,31 @@
     }
 }
 
-.カウントダウン文字{
+#タイトル {
+    font-weight:100;
+    padding-top:5.25em;
+    padding-bottom:0.5em;
+    background: linear-gradient(-135deg, #00ff00, #0089ff);
+    text-shadow:0.5px 0 5px rgb(50, 50, 50);
+    text-align: center;
+    color: #FFFFFF;
+}
+
+#タイトル文字 {
+    user-select: none;
+    font-size:300%;
+    font-weight:100;
+    font-weight: bolder;
+}
+
+#カウントダウン文字{
     font-family: 'Noto Sans JP','ヒラギノ角ゴ ProN','meiryo','メイリオ', sans-serif;
     font-weight: bold;
     font-size:5em;
     background:linear-gradient(45deg,#0089ff,#0040ff,#b03bff,#f23bff,#ff4ad2,#ff2626,#fc8c1c,#f6fc47,#6cf542,#42f566,#0089ff,#0040ff,#b03bff,#f23bff,#ff4ad2,#ff2626,#fc8c1c,#f6fc47,#6cf542,#42f566);
     background-size:1500% 1500%;
     animation:bggradient 30s linear infinite;
-    -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     user-select: none;
 }
@@ -37,7 +54,7 @@
     user-select: none;
 }
 
-.カウントダウン文字3{
+#カウントダウン文字3{
     font-family: 'Noto Sans JP','ヒラギノ角ゴ ProN','meiryo','メイリオ', sans-serif;
     font-weight: bold;
     font-size:0.5em;

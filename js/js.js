@@ -1,3 +1,16 @@
+document.addEventListener("DOMContentLoaded", function() {
+    fetch("../include/header.html")
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("header").innerHTML = data;
+        });
+    fetch("../include/footer.html")
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("footer").innerHTML = data;
+        });
+});
+  
 window.onload = function(){
     if(window.matchMedia('(prefers-color-scheme: dark)').matches == true){
         var pagecolor = "dark"; 
@@ -19,7 +32,6 @@ window.onload = function(){
         document.getElementById("pixivbo").src="css/images/pixiv.png";
         //ダーク以外だったら変数を"white"にして、アイコンの色を変える
 }}
-
 
 //次のバージョンでindexでこれ読み込むようにしといて
 //indexのgithubのidは違う奴にしてるから変えといて

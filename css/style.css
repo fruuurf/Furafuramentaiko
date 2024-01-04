@@ -55,7 +55,6 @@ a{
 
 .ふぉんと {
     font-family: 'Noto Sans JP','ヒラギノ角ゴ ProN','meiryo','メイリオ', sans-serif;
-    font-weight: 100;
     text-align: center;
     color:var(--white-text);
 }
@@ -140,6 +139,9 @@ a{
 
 .イメージカラー塗りつぶし{
     background-color: #0089ff;
+    padding:0 5px;
+    font-family:'Century Gothic','Futura','Noto Sans JP','ヒラギノ角ゴ ProN','meiryo','メイリオ', sans-serif;
+    font-weight: lighter;
 }
 
 .bold{
@@ -182,7 +184,12 @@ a{
     }
 }
 
+::selection{
+    background: #0089ff;
+}
+
 .タイトル {
+    font-weight:100;
     padding-top:5.25em;
     padding-bottom:0.5em;
     background: linear-gradient(-135deg, #00ff00, #0089ff);
@@ -192,7 +199,8 @@ a{
 }
 
 .タイトル_index {
-    padding-top:11vh;
+    font-weight:100;
+    padding-top:10vh;
     padding-bottom:0.5em;
     background: linear-gradient(-135deg, #00ff00, #0089ff);
     text-shadow:0.5px 0 5px rgb(50, 50, 50);
@@ -219,6 +227,9 @@ a{
 @media screen and (max-width:1280px){
     .タイトル_index {
         padding-top:9vh;
+    }
+    .タイトル {
+        padding-top:5.25em;
     }
 }
 
@@ -272,11 +283,13 @@ a{
 
 .スマホ用メニュー{
     display: none;
+    pointer-events: none;
 }
 
 @media screen and (max-width:425px){
     .スマホ用メニュー{
         position: fixed;
+        pointer-events: auto;
         display: block;
         width:100%;
         font-size:1.75em;
@@ -312,6 +325,7 @@ a{
 
 .スマホ用メニュー_index{
     display: block;
+    pointer-events: none;
     width:100%;
     box-shadow:0px 0px 35px #000000;
     background-color: var(--white-color);
@@ -325,6 +339,7 @@ a{
 @media screen and (max-width:425px){
     .スマホ用メニュー_index{
         position: fixed;
+        pointer-events: auto;
     }
 }
 
@@ -370,6 +385,8 @@ a{
 }
 
 .いちばんうえのメニュー {
+    font-family:'Noto Sans JP','ヒラギノ角ゴ ProN','meiryo','メイリオ', sans-serif;
+    font-weight: bold;
     display:flex;
     list-style: none;
     backdrop-filter:blur(25px);
@@ -381,17 +398,17 @@ a{
 
 .いちばんうえのメニュー li {
     font-size: 3vh;
-    margin-top: auto;
-    margin-bottom: auto;
+    margin-top: 0.75em;
+    margin-bottom: 0.75em;
     margin-left: 1.5em;
 }
 
 @media screen and (max-width:1280px){
     .いちばんうえのメニュー li{
         font-size: 2.5vh;
-        margin-top: auto;
-        margin-bottom: auto;
-        margin-left: 0.75em;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        margin-left: 1em;
     }
 }
 
@@ -407,6 +424,8 @@ a{
 }
 
 .いちばんうえのメニュー_index {
+    font-family:'Noto Sans JP','ヒラギノ角ゴ ProN','meiryo','メイリオ', sans-serif;
+    font-weight: bold;
     display:flex;
     list-style: none;
     backdrop-filter:blur(25px);
@@ -418,8 +437,8 @@ a{
 
 .いちばんうえのメニュー_index li {
     font-size: 3vh;
-    margin-top: 1em;
-    margin-bottom: 1em;
+    margin-top: 0.75em;
+    margin-bottom: 0.75em;
     margin-left: 1.5em;
 }
 
@@ -440,6 +459,34 @@ a{
 .いちばんうえのメニュー_index li a:hover {
         
     color: rgb(0, 140, 255);
+}
+
+.YouTube{
+    position: fixed;
+    right:1em;
+    top:0.5em;
+}
+
+.YouTubeHeadSize{
+    display: block;
+    width:4vw;
+}
+
+.YouTubeHeadSizeDark{
+    display: none;
+    width:4vw;
+}
+
+@media (prefers-color-scheme: dark){
+    .YouTubeHeadSize{
+        display: none;
+        width:4vw;
+    }
+
+    .YouTubeHeadSizeDark{
+        display: block;
+        width:4vw;
+    }
 }
 
 .アイコン{
@@ -466,12 +513,13 @@ a{
 }
 
 .ちょい薄{
-    background-color: var(--menu);
+    background-color:#646464;
     transition:0.25s;
 }
 
 .いちばんしたのメニュー{
     display: flex;
+    float:left;
     list-style: none;
     font-size: 1.25rem;
     text-transform: uppercase;
@@ -524,32 +572,105 @@ a{
     }
 }
 
+.スマホ用警告{
+    display: none;
+}
+
+@media screen and (max-width:425px){
+    .スマホ用警告{
+        display: block;
+        color:#ff0000;
+    }
+}
+
 .ロゴ共{
     margin:0.75em auto;
+    display: block;
+}
+
+.ロゴ共ダーク{
+    margin:0.75em auto;
+    display: none;
 }
 
 .ロゴ共間隔{
     margin:1em;
 }
 
+.ロゴ共サイズ{
+    width:5vw;
+}
+
 .下ロゴ共間隔{
-    margin:0.25em;
+    margin:0 0.5em 1em 0.5em;
 }
 
 .下ロゴ共{
     display:flex;
-    text-align: left;
-    margin:0 0 2em 2em;
+    float:right;
+    margin:1em 1em 0 0;
+    display: block;
 }
 
-.下文字{
-    font-family:'Century Gothic','Futura','Noto Sans JP','ヒラギノ角ゴ ProN','meiryo','メイリオ', sans-serif;
-    font-weight: bold;
-    font-size: 1.25em;
-    color:var(--white-text);
-    margin-left: auto;
-    margin-right:5vw;
+.下ロゴ共ダーク{
+    display:flex;
+    right:0;
+    bottom:0;
+    margin:1em 1em 0 0;
+    display: none;
 }
+
+.下ロゴ共サイズ{
+    width:3vw;
+}
+
+@media screen and (max-width:425px){
+    .ロゴ共間隔{
+        margin:0.5em;
+    }
+    .ロゴ共サイズ{
+        width:12.5vw;
+    }
+    .下ロゴ共{
+        display:flex;
+        float:left;
+        margin:0 1em 0 1.5em;
+    }
+    .下ロゴ共間隔{
+        margin:0,5em;
+    }
+    .下ロゴ共サイズ{
+        width:12.5vw;
+    }
+}
+
+
+@media (prefers-color-scheme: dark){
+    .ロゴ共{
+        margin:0.75em auto;
+        display: none;
+    }
+
+    .ロゴ共ダーク{
+        margin:0.75em auto;
+        display: block;
+    }
+
+    .下ロゴ共{
+        display:flex;
+        float:right;
+        margin:1em 1em 0 0;
+        display: none;
+    }
+    
+    .下ロゴ共ダーク{
+        display:flex;
+        float:right;
+        margin:1em 1em 0 0;
+        display: block;
+    }
+}
+
 
 .ｺﾝﾆﾁﾜ {
     display: inline-block;
@@ -557,7 +678,7 @@ a{
     width: 10%;
     text-align: center;
     color:#FFFFFF;
-    background-color:(--dark);
+    background-color:#7d7d7d;
     padding: 10px;
     border-radius: 0.5em;
 }
@@ -635,40 +756,78 @@ a{
     }
 }
 
-.画像付ボタン {
-    display:inline-flex;
-    text-decoration: none;
+#画像付ボタン標準{
+    width: 15em;
+    height: 15em;
 }
 
-.画像付ボタン_文 {
+#画像付ボタン横長{
+    width: 30em;
+    height: 15em;
+}
+
+#画像付ボタン超横長{
+    width: 45em;
+    height: 15em;
+}
+
+#画像付ボタン超超横長{
+    width: 60em;
+    height: 15em;
+}
+
+#画像付ボタン_3文{
+    padding:2em 0 1.85em;
+}
+
+#画像付ボタン_2文{
+    padding:2em 0 2.45em;
+}
+
+.画像付ボタン {
+    display:inline-flex;
+    position: relative;
     text-decoration: none;
-    text-align: center;
-    color: white;
-    background: #0089ff;
-    font-weight: bold;
-    font-size:1em;
-    padding:1em;
-    margin:0.25em 0;
-    width: 20vw;
-    border-radius:0px 0.5em 0.5em 0px;
+    margin:0.5em;
 }
 
 .画像付ボタン_画像{
-    width: 4em;
-    height: 4em;
-    margin:0.25em 0;
-    border-radius:0.5em 0px 0px 0.5em;
+    border-radius:0.5em;
 }
 
-.画像付ボタン_文:hover {
-    background: #0070c0;
-    color: #FFFFFF;
+.画像付ボタン:hover .画像付ボタン_文{
+    display: inline-block;
+    backdrop-filter:blur(25px);
 }
 
-@media screen and (max-width:425px){
-    .画像付ボタン_文 {
-        width: 65vw;
-    }
+.画像付ボタン_文{
+    display: none;
+    position:absolute;
+    top:0;
+    right:0;
+    left:0;
+    text-decoration: none;
+    text-align: center;
+    color: var(--white-text);
+    font-size:2em;
+    border-radius: 0.25em;
+}
+
+.画像付ボタン_文1 {
+    font-size:1.5em;
+    filter:drop-shadow(0px 0px 2.5px #000000);
+}
+
+.画像付ボタン_文2 {
+    margin-top:0.25em;
+    font-size:0.5em;
+    filter:drop-shadow(0px 0px 2.5px #000000);
+}
+
+.画像付ボタン_文3 {
+    margin-top:0.25em;
+    font-size:0.35em;
+    filter:drop-shadow(0px 0px 2.5px #000000);
 }
 
 .縦並び用ボタン {
@@ -797,6 +956,13 @@ a{
     margin:0 auto;
 }
 
+.中央寄せの左寄せ#VHS風{
+    width:36%;
+    text-align: left;
+    margin:0 auto;
+}
+
+
 .中央寄せの左寄せ#対応機種{
     width:40%;
     text-align: left;
@@ -804,7 +970,7 @@ a{
 }
 
 .中央寄せの左寄せ#相互リンク{
-    width:30%;
+    width:75%;
     text-align: left;
     margin:0 auto;
 }
@@ -868,8 +1034,8 @@ a{
     font-size: 1em;
 }
 
-#Twitter{
-    width:3.75vw;
+#misskey{
+    width:5vw;
     margin:0 0.75em 0.1em 0.75em;
     color:var(--white-text);
 }
@@ -965,19 +1131,66 @@ a{
     }
 }
 
-.デスクトップ背景配布ページ{
-    width:90vw;
+.デスクトップ背景{
+    width:20vw;
+    box-shadow:0 0 0.5em #000000;
+    margin:2vw;
 }
 
+.デスクトップ背景配布ページ{
+    display: flex;
+    justify-content:start;
+    flex-flow:row wrap;
+}
+
+.デスクトップ背景配布ページ li{
+    list-style:none;
+    text-align: center;
+}
+
+.デスクトップ背景配布ページ h3{
+    width:20vw;
+    overflow-wrap: normal;
+    margin-bottom:1em;
+    margin-left:auto;
+    margin-right:auto;
+    font-weight: bold;
+}
+
+.デスクトップ背景配布ページ p{
+    width:20vw;
+    overflow-wrap: normal;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+
 @media screen and (max-width:425px){
-    .デスクトップ背景配布ページ td{
-        display: block;
+    .デスクトップ背景{
+        width:45vw;
+        box-shadow:0 0 0.5em #000000;
+        margin:2.5vw;
+    }
+
+    .デスクトップ背景配布ページ h3{
+        width:45vw;
+        overflow-wrap: normal;
+        margin-left:auto;
+        margin-right:auto;
+        font-weight: bold;
+        font-size:1em;
+    }
+
+    .デスクトップ背景配布ページ p{
+        width:45vw;
+        overflow-wrap: normal;
+        margin-left:auto;
+        margin-right:auto;
     }
 }
 
-.デスクトップ背景{
-    width:290px;
-    box-shadow:0 0 0.5em #000000;
+.デスクトップ背景テキスト{
+    display: block;
 }
 
 .過去バージョン作成日{
