@@ -53,6 +53,10 @@ a{
 
 @keyframes fadeOut{}
 
+.ふぉんと404{
+    box-shadow:0px 0px 25px #000000;
+}
+
 .ふぉんと {
     font-family: 'Noto Sans JP','ヒラギノ角ゴ ProN','meiryo','メイリオ', sans-serif;
     text-align: center;
