@@ -805,12 +805,12 @@ li{
 }
 
 .画像付ボタン:hover .画像付ボタン_文{
-    display: inline-block;
     backdrop-filter:blur(25px);
+    opacity: 1;
 }
 
 .画像付ボタン_文{
-    display: none;
+    display: block;
     position:absolute;
     top:0;
     right:0;
@@ -820,6 +820,8 @@ li{
     color: var(--white-text);
     font-size:2em;
     border-radius: 0.25em;
+    opacity: 0;
+    transition: 0.25s ease-in;
 }
 
 .画像付ボタン_文1 {
