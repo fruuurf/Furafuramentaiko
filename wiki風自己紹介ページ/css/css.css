@@ -4,11 +4,27 @@ body {
 }
  
 a{
+  color:#0645ad;
   text-decoration: none;
 }
 
 a:hover{
   text-decoration:underline;
+}
+
+.red{
+  color:#d73333;
+  cursor: pointer;
+}
+
+.blue{
+  color:#0645ad;
+  cursor: pointer;
+}
+
+.要出典{
+  font-size: 1.25vh;
+  vertical-align: top;
 }
 
 #wrapper {
@@ -48,8 +64,12 @@ a:hover{
   margin:10px;
 }
 
+.めいんmain{
+  position: relative;
+}
+
 .さいど {
-  width:10%;
+  width:10vw;
   height:300px;
   background-color:#f6f6f6;
   padding:20px;
@@ -224,6 +244,96 @@ th {
   box-align:center;
   font-size:30px;
   text-align: left;
+}
+
+.mainタイトル{
+  display: block;
+  position: relative;
+  height:15vh;
+  margin:1vh 1vw;
+  border:1px solid #a7d7f9;
+  border-radius:1vh;
+  overflow: hidden;
+}
+
+.mainタイトルimg{
+  height:15vh;
+}
+.mainタイトル見出し1{
+  display: inline-block;
+  position: absolute;
+  top:4vh;
+  font-size:3vh;
+  margin:auto 0;
+}
+.mainタイトル見出し2{
+  display: inline-block;
+  position: absolute;
+  top:8vh;
+  font-size:1.5vh;
+  margin:auto 0;
+}
+
+.全記事{
+  position: relative;
+  top:0;
+  float: inline-start;
+  width:50vw;
+  height:100vh;
+  margin:2vh 0.5vw 2vh 1vw;
+  border:1px solid #a7d7f9;
+  border-radius:1vh;
+}
+
+.全記事一枚タイトル{
+  position: relative;
+  width:15em;
+  background:linear-gradient(90deg,#c9e3ff,#ffffff00);
+  border-radius:25vh 0 0 25vh;
+  margin:2vh;
+}
+
+.全記事一枚タイトル画像{
+  position: absolute;
+  top:-0.6em;
+  left:0.25em;
+  width:5vh;
+}
+
+.全記事一枚タイトル文{
+  font-size:2vh;
+  font-weight: bold;
+  line-height:2vh;
+  margin-left:6.5vh;
+}
+
+.全記事タイトルa{
+  display: block;
+  font-size:2vh;
+  font-weight: bold;
+  line-height:4vh;
+  margin-left:2vh;
+}
+
+.今日の一枚{
+  position: relative;
+  float: inline-end;
+  width:30vw;
+  height:100vh;
+  margin:2vh 1vw 2vh 0.5vw;
+  border:1px solid #a7d7f9;
+  border-radius:1vh;
+  background: #f5faff;
+}
+
+#今日の一枚の写真{
+  width:17.5vw;
+  margin:0 2vh;
+}
+
+#今日の一枚の説明{
+  font-size:1.5vh;
+  margin:0 2vh;
 }
 
 .右寄せ{

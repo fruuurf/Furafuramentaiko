@@ -197,7 +197,19 @@ li{
     background: #0089ff;
 }
 
-.タイトル {
+.fullpagespace{
+    height:100vh;
+}
+
+.halfpagespace{
+    height:50vh;
+}
+
+.quarterpagespace{
+    height:25vh;
+}
+
+.タイトル{
     font-weight:100;
     padding-top:5.25em;
     padding-bottom:0.5em;
@@ -207,7 +219,7 @@ li{
     color: #FFFFFF;
 }
 
-.タイトル_index {
+.タイトル_index{
     font-weight:100;
     padding-top:10vh;
     padding-bottom:0.5em;
@@ -217,14 +229,42 @@ li{
     color: #FFFFFF;
 }
 
-.タイトル文字 {
+.タイトル文字{
     user-select: none;
     font-size:300%;
     font-weight:100;
     font-weight: bolder;
 }
 
-#バージョン {
+#バージョン{
+    display: inline-block;
+    font-family: 'Century Gothic','Futura','Noto Sans JP','ヒラギノ角ゴ ProN','meiryo','メイリオ', sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    user-select: none;
+    font-size:150%;
+    font-weight: bold;
+}
+
+.タイトル_index_スマホ{
+    font-weight:100;
+    padding-top:10vh;
+    padding-bottom:0.5em;
+    background: linear-gradient(-135deg, #00ff00, #0089ff);
+    text-shadow:0.5px 0 5px rgb(50, 50, 50);
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.タイトル文字_スマホ{
+    user-select: none;
+    font-size:300%;
+    font-weight:100;
+    font-weight: bolder;
+}
+
+#バージョン_スマホ{
+    display: inline-block;
     font-family: 'Century Gothic','Futura','Noto Sans JP','ヒラギノ角ゴ ProN','meiryo','メイリオ', sans-serif;
     font-weight: bold;
     font-style: italic;
@@ -333,7 +373,7 @@ li{
 }
 
 .スマホ用メニュー_index{
-    display: block;
+    display: none;
     pointer-events: none;
     width:100%;
     box-shadow:0px 0px 35px #000000;
@@ -347,6 +387,7 @@ li{
 
 @media screen and (max-width:425px){
     .スマホ用メニュー_index{
+        display: block;
         position: fixed;
         pointer-events: auto;
     }
@@ -397,8 +438,10 @@ li{
     font-family:'Noto Sans JP','ヒラギノ角ゴ ProN','meiryo','メイリオ', sans-serif;
     font-weight: bold;
     display:flex;
+    position: relative;
+    z-index:100;
     list-style: none;
-    backdrop-filter:blur(25px);
+    backdrop-filter:blur(25px) brightness(1.25);
     transition:0.25s;
     text-align: center;
     text-transform: uppercase;
@@ -406,10 +449,13 @@ li{
 }
 
 .いちばんうえのメニュー li {
+    position: relative;
+    z-index:100;
     font-size: 3vh;
     margin-top: 0.75em;
     margin-bottom: 0.75em;
     margin-left: 1.5em;
+    text-shadow:0px 0px 3px #323232bd;
 }
 
 @media screen and (max-width:1280px){
@@ -436,8 +482,10 @@ li{
     font-family:'Noto Sans JP','ヒラギノ角ゴ ProN','meiryo','メイリオ', sans-serif;
     font-weight: bold;
     display:flex;
+    position: relative;
+    z-index:100;
     list-style: none;
-    backdrop-filter:blur(25px);
+    backdrop-filter:blur(25px) brightness(1.25);
     transition:0.25s;
     text-align: center;
     text-transform: uppercase;
@@ -445,10 +493,13 @@ li{
 }
 
 .いちばんうえのメニュー_index li {
+    position: relative;
+    z-index:100;
     font-size: 3vh;
     margin-top: 0.75em;
     margin-bottom: 0.75em;
     margin-left: 1.5em;
+    text-shadow:0px 0px 3px #323232bd;
 }
 
 @media screen and (max-width:1280px){
@@ -522,8 +573,9 @@ li{
 }
 
 .ちょい薄{
-    background-color:#646464;
+    background-color:#232323;
     transition:0.25s;
+    height:calc(2rem + 50px);
 }
 
 .いちばんしたのメニュー{
@@ -690,6 +742,7 @@ li{
     background-color:#7d7d7d;
     padding: 10px;
     border-radius: 0.5em;
+    box-shadow:0 0 5px #000000;
 }
 
 @media screen and (max-width:425px){
@@ -702,6 +755,21 @@ li{
 
 .ｺﾝﾆﾁﾜ:hover {
     background-color:#646464;
+}
+
+#background{
+    color:#ffffff;
+    text-shadow:0 0 5px #000000;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index:-1;
+}
+
+.backgroundfilter{
+    backdrop-filter:brightness(0.75);
+    box-shadow: 0px -10vh 7vh -20px var(--white-color) inset;
+    transition: 0.5s;
 }
 
 .ボタン {
@@ -801,11 +869,12 @@ li{
 }
 
 .画像付ボタン_画像{
+    position: relative;
     border-radius:0.5em;
 }
 
 .画像付ボタン:hover .画像付ボタン_文{
-    backdrop-filter:blur(25px);
+    backdrop-filter:blur(25px) brightness(0.9);
     opacity: 1;
 }
 
@@ -1355,26 +1424,4 @@ li{
 
 .td空白{
     border:none;
-}
-
-#ウクライナ{
-    display: block;
-    padding:0.5em;
-    color:var(--ukr);
-    background:linear-gradient(#3b76c5 50%,#fadf17 50%);
-    border-radius:2em;
-    margin:0px auto;
-    width:75%;
-}
-
-@media screen and (max-width:425px){
-    #ウクライナ{
-        display: block;
-        padding:0.5em;
-        color:var(--ukr);
-        background:linear-gradient(#3b76c5 50%,#fadf17 50%);
-        border-radius:2em;
-        margin:0px auto;
-        width:90%;
-    }
 }

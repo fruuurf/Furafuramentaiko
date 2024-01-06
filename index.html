@@ -30,14 +30,32 @@
         </div>
     </div>
 
+    <div class="タイトル_index">
+        <span class="タイトル文字">
+        ふらふらめんたいこのホームページ</span>
+        <span id="バージョン">
+        Ver.1.4.0</span>
+    </div>
+
+    <script>
+        $(function() {
+            $('#バージョン')
+            .mouseover(function(e) {
+                $(this).text("24.01.06");
+            })
+            .mouseout(function(e) {
+                $(this).text("Ver.1.4.0");
+            });
+        });
+    </script>
 
     <details class="スマホ用メニュー_index">
     <summary>
-        <div class="タイトル_index">
-            <span class="タイトル文字">
+        <div class="タイトル_indexスマホ">
+            <span class="タイトル文字_スマホ">
             ふらふらめんたいこのホームページ</span>
-            <span id="バージョン">
-            Ver.1.3.2</span>
+            <span id="バージョン_スマホ">
+            Ver.1.4.0</span>
         </div></summary>
             <br>
             <a href="index.html">home</a><br>
@@ -52,45 +70,38 @@
 
     <div class="スマホ用空白_index"></div>
 
-    <script>
-        $(function(){
-            var 更新年 = new Date(document.lastModified).getFullYear();
-            var 更新月 = new Date(document.lastModified).getMonth()+1 < 10 ? '' + new Date(document.lastModified).getMonth()+1 : new Date(document.lastModified).getMonth()+1; 
-            var 更新日 = new Date(document.lastModified).getDate() < 10 ? '0' + new Date(document.lastModified).getDate() : new Date(document.lastModified).getDate();
-            var 更新 = 更新年 + "." + 更新月 + "." + 更新日;
-
-            $('#バージョン')
-            .mouseover(function(e) {
-                $("#バージョン").text(更新);
-            })
-            .mouseout(function(e) {
-                $("#バージョン").text("Ver.1.3.1");
-            });
-        });
-    </script>
-
     <div class="スマホ用警告">
         <br><br>
-        このサイトはスマホへの配慮不足のため、スマホで見るといろいろとレイアウト崩れが発生します。<br>
+        このサイトはスマホへの配慮が皆無のため、スマホで見るといろいろとレイアウト崩れが発生します。<br>
         お許しを。
     </div>
 
-    <div class="クソデカ">やぁ</div>
-    <h2>ふらふらめんたいこだよ</h2>
+    <div id="background">
+    <div class="backgroundfilter">
 
-    <br><br><br><br>
+        <br><br><br><br><br><br><br>
 
-    <h3>ネット上で変なことやってみたり、プログラミングしてみたり...</h3>
-    <h3>まぁ、いろいろと活動してる人です</h3>
-    <br>
-    <div class="ｺﾝﾆﾁﾜ" onclick="clickDisplayAlert()">ｺﾝﾆﾁﾜ!</div>
-    <script>
-        function clickDisplayAlert() {
-      alert("へっぉ");
-    }
-    </script>
+        <div class="クソデカ">やぁ</div>
+        <h2>ふらふらめんたいこだよ</h2>
 
-    <br><br><br><br><br><br>
+        <div class="quarterpagespace"></div>
+
+        <h3>ネット上で変なことやってみたり、プログラミングしてみたり...</h3>
+        <h3>まぁ、いろいろと活動してる人です</h3>
+        <br>
+        <div class="ｺﾝﾆﾁﾜ" onclick="clickDisplayAlert()">ｺﾝﾆﾁﾜ!</div>
+        <script>
+            function clickDisplayAlert() {
+        alert("へっぉ");
+        }
+        </script>
+
+        <div class="quarterpagespace"></div>
+    </div>
+    </div>
+
+    <div class="quarterpagespace"></div>
+
     <div class="４：３とか用">
         <br><br><br>
     </div>
@@ -116,7 +127,7 @@
     <br><br><br><br><br><br>
 
     <h2>自分について簡単に紹介</h2>
-    <img src="css/images/logo.png" class="logo" alt="アイコン">
+    <img src="css/images/ふらおね.png" class="logo" alt="アイコン">
     <div class="ホーム自己紹介">
     <p>ネット名：ふらふらめんたいこ</p>
     <p>性別：男</p>
@@ -134,16 +145,7 @@
         <span class="お知らせタイトル">Twitterやめました。</span>
     </div></a>
 
-    <br><br><br><br><br>
-
-    <div id="ウクライナ"><h1>ウクライナがんばれ！</h1>
-    <h2>Україна Удачі!</h2>
-    <h2>Украина Удачи!</h2>
-    <h4>わいにできることはこれぐらいしかなかった。ごめん。</h4><br></div>
-
-    <br><br><br>
-
-    <br>
+    <div class="quarterpagespace"></div>
 
     <div id="footer"></div>
 

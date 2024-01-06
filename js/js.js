@@ -11,6 +11,13 @@ document.addEventListener("DOMContentLoaded", function() {
         });
 });
   
+document.addEventListener("DOMContentLoaded", function() {
+    var backgroundimgnum = Math.floor(Math.random() * 24) + 1;
+    var backgroundimg = "../css/images/background/" + backgroundimgnum + ".jpg";
+    var background = document.getElementById("background");
+    background.style.backgroundImage = "url('" + backgroundimg + "')";
+})
+
 window.onload = function(){
     if(window.matchMedia('(prefers-color-scheme: dark)').matches == true){
         var pagecolor = "dark"; 
