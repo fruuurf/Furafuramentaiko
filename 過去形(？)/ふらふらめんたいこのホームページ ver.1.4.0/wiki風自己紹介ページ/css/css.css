@@ -1,0 +1,341 @@
+body {
+    font-family:'メイリオ','meiryo',sans-serif;
+    background-color:#f6f5f4;
+}
+ 
+a{
+  color:#0645ad;
+  text-decoration: none;
+}
+
+a:hover{
+  text-decoration:underline;
+}
+
+.red{
+  color:#d73333;
+  cursor: pointer;
+}
+
+.blue{
+  color:#0645ad;
+  cursor: pointer;
+}
+
+.要出典{
+  font-size: 1.25vh;
+  vertical-align: top;
+}
+
+#wrapper {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 60px;
+}
+
+.めいん {
+  width: 90%;
+  background-color:#ffffff;
+  padding:20px;
+  margin:50px 0px 20px 0px;
+  border:1px solid #a7d7f9;
+}
+
+.めいん p {
+  margin:5px;
+}
+
+.めいん h3 {
+  font-size:17px;
+  font-weight:bold;
+}
+
+.めいん h4 {
+  font-size:17px;
+  font-weight:bold;
+  margin:10px;
+}
+
+.めいんmain{
+  position: relative;
+}
+
+.さいど {
+  width:10vw;
+  height:300px;
+  background-color:#f6f6f6;
+  padding:20px;
+} 
+
+.複数の問題,.ふさわしくない内容{
+  padding:0.25em 0.5em;
+  border-right:1px #a2a9b1 solid;
+  border-top:1px #a2a9b1 solid;
+  border-bottom:1px #a2a9b1 solid;
+  border-left:0.5em #f28500 solid;
+  margin:0em auto 1em;
+  width:50%;
+}
+
+
+.複数の問題tx,.ふさわしくない内容tx{
+  text-align: left;
+  border:none;
+  font-size:14px;
+  background:#ffffff;
+}
+
+.複数の問題img,.ふさわしくない内容img{
+  display: inline-block;
+  border:none;
+  width:3em;
+  background:#ffffff;
+}
+
+.目次 {
+  width:35%;
+  background-color: #f8f9fa;
+  padding:5px;
+  margin:10px 20px;
+  border:1px solid #a2a9b1;
+}
+ 
+.左のやつ {
+  width:30%;
+  background-color: #f8f9fa;
+  padding:5px;
+  margin:10px 20px;
+  border:1px solid #a2a9b1;
+  float: right;
+  font-size: 88%;
+}
+
+.赤 {
+  background-color:#b50000;
+}
+
+.表 {
+  padding: 5px;
+  margin:10px;
+  border: 1px solid #a2a9b1;
+  border-collapse: collapse;
+  text-align: center;
+  font-size: small;
+  display:inline-table;
+}
+
+
+td,th {
+  padding: 5px;
+  border: 1px solid rgb(190, 190, 190);
+  background-color: #f8f9fa ;
+}
+
+th {
+  background-color: #eaecf0;
+}
+
+.ふらめん {
+  background:#0089FF;
+  border:1px solid #a9a9a9;
+}
+
+.はたねさん {
+  background:rgb(33, 116, 0);
+  border:1px solid #a9a9a9;
+}
+
+.かあくん{
+  background:#00ffff;
+  border:1px solid #a9a9a9;
+}
+
+.鍋キューブ {
+  background:#FF2400;
+  border:1px solid #a9a9a9;
+}
+
+.Alicer {
+  background: #ff00ee;
+  border:1px solid #a9a9a90e;
+}
+
+.ぴーこ {
+  background: #fa8072;
+  border:1px solid #a9a9a9;
+}
+
+.sspeed {
+  background: #007dff;
+  border:1px solid #a9a9a9;
+}
+
+.みつる {
+  background: #00ff00;
+  border:1px solid #a9a9a9;
+}
+
+.ぽんすけ {
+  background: #7f1184;
+  border:1px solid #a9a9a9;
+}
+
+.枠 {
+  margin: 4px;
+  padding: 4px 0px;
+  border: 1px solid #a2a9b1;
+  background-color: #f8f9fa;
+  font-size: 88%;
+}
+
+.画像 {
+  border:1px solid #c8ccd1;
+  padding:3px;
+  margin:2px 0;
+  font-size:16px;
+  display:inline-block;
+}
+
+.content {
+  background-color:#b3d874;
+  width:250px;
+  height:300px;
+  text-align:center;
+}
+ 
+ article {
+  display:flex;
+}
+
+.ろご {
+  margin: 0 10 20 10;
+}
+
+.さいどの棒のやつ{
+  border:solid 1px;
+  border-image:radial-gradient(#c8ccd1, #f6f6f6);
+  width:125px;
+  box-align:center;
+}
+
+.めいんの棒のやつ{
+  border-bottom:1px solid #a2a9b1;
+  margin:10px 0px 5px 0px;
+  padding:0px;
+  border-width:90%;
+  box-align:center;
+  font-size:23px;
+  text-align: left;
+}
+
+.タイトル{
+  border-bottom:1px solid #a2a9b1;
+  margin:10px 0px 5px 0px;
+  padding:0px;
+  border-width:90%;
+  box-align:center;
+  font-size:30px;
+  text-align: left;
+}
+
+.mainタイトル{
+  display: block;
+  position: relative;
+  height:15vh;
+  margin:1vh 1vw;
+  border:1px solid #a7d7f9;
+  border-radius:1vh;
+  overflow: hidden;
+}
+
+.mainタイトルimg{
+  height:15vh;
+}
+.mainタイトル見出し1{
+  display: inline-block;
+  position: absolute;
+  top:4vh;
+  font-size:3vh;
+  margin:auto 0;
+}
+.mainタイトル見出し2{
+  display: inline-block;
+  position: absolute;
+  top:8vh;
+  font-size:1.5vh;
+  margin:auto 0;
+}
+
+.全記事{
+  position: relative;
+  top:0;
+  float: inline-start;
+  width:50vw;
+  height:100vh;
+  margin:2vh 0.5vw 2vh 1vw;
+  border:1px solid #a7d7f9;
+  border-radius:1vh;
+}
+
+.全記事一枚タイトル{
+  position: relative;
+  width:15em;
+  background:linear-gradient(90deg,#c9e3ff,#ffffff00);
+  border-radius:25vh 0 0 25vh;
+  margin:2vh;
+}
+
+.全記事一枚タイトル画像{
+  position: absolute;
+  top:-0.6em;
+  left:0.25em;
+  width:5vh;
+}
+
+.全記事一枚タイトル文{
+  font-size:2vh;
+  font-weight: bold;
+  line-height:2vh;
+  margin-left:6.5vh;
+}
+
+.全記事タイトルa{
+  display: block;
+  font-size:2vh;
+  font-weight: bold;
+  line-height:4vh;
+  margin-left:2vh;
+}
+
+.今日の一枚{
+  position: relative;
+  float: inline-end;
+  width:30vw;
+  height:100vh;
+  margin:2vh 1vw 2vh 0.5vw;
+  border:1px solid #a7d7f9;
+  border-radius:1vh;
+  background: #f5faff;
+}
+
+#今日の一枚の写真{
+  width:17.5vw;
+  margin:0 2vh;
+}
+
+#今日の一枚の説明{
+  font-size:1.5vh;
+  margin:0 2vh;
+}
+
+.右寄せ{
+  text-align:right;
+}

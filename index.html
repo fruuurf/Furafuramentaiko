@@ -34,20 +34,8 @@
         <span class="タイトル文字">
         ふらふらめんたいこのホームページ</span>
         <span id="バージョン">
-        Ver.1.4.0</span>
+        Ver.x.y.z</span>
     </div>
-
-    <script>
-        $(function() {
-            $('#バージョン')
-            .mouseover(function(e) {
-                $(this).text("24.01.06");
-            })
-            .mouseout(function(e) {
-                $(this).text("Ver.1.4.0");
-            });
-        });
-    </script>
 
     <details class="スマホ用メニュー_index">
     <summary>
@@ -55,7 +43,7 @@
             <span class="タイトル文字_スマホ">
             ふらふらめんたいこのホームページ</span>
             <span id="バージョン_スマホ">
-            Ver.1.4.0</span>
+            Ver.x.y.z</span>
         </div></summary>
             <br>
             <a href="index.html">home</a><br>
@@ -67,6 +55,22 @@
             <a href="このサイトの詳細情報とか.html">このサイトの詳細情報とか</a><br>
             <br>
     </details>
+
+    <script>
+        var version = "Ver.1.4.1"
+        var day = "24.01.06"
+        $('#バージョン').text(version);
+        $('#バージョン_スマホ').text(version);
+        $(function() {
+            $('#バージョン')
+            .mouseover(function(e) {
+                $(this).text(day);
+            })
+            .mouseout(function(e) {
+                $(this).text(version);
+            });
+        });
+    </script>
 
     <div class="スマホ用空白_index"></div>
 
@@ -88,13 +92,6 @@
 
         <h3>ネット上で変なことやってみたり、プログラミングしてみたり...</h3>
         <h3>まぁ、いろいろと活動してる人です</h3>
-        <br>
-        <div class="ｺﾝﾆﾁﾜ" onclick="clickDisplayAlert()">ｺﾝﾆﾁﾜ!</div>
-        <script>
-            function clickDisplayAlert() {
-        alert("へっぉ");
-        }
-        </script>
 
         <div class="quarterpagespace"></div>
     </div>
@@ -122,7 +119,6 @@
         <a class="ロゴ共間隔" href= "https://github.com/Furafuramentaiko" target="_blank"><img src="css/images/github-mark-white.png" class="ロゴ共サイズ"></a></span>
         <a class="ロゴ共間隔" href= "https://www.pixiv.net/users/64454758" target="_blank"><img src="css/images/pixiv_white.png" class="ロゴ共サイズ"></a>  
         </div>
-    <p>※カウントダウンの公開の都合でここ中途半端になってるけど許して</p>
 
     <br><br><br><br><br><br>
 

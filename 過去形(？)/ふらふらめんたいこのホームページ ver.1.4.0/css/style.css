@@ -1,0 +1,1427 @@
+html{
+    font-size:16px;
+    margin:0px;
+    padding:0px;
+}
+
+body {
+    font-size:16px;
+    margin:0px;
+    padding:0px;
+    background-color: #323232;
+    background-color: var(--white-color);
+    transition:0.25s;
+}
+
+.hr {
+    height: 5px;
+    background-color: Black;
+    width: 100%;
+    border: none;
+}
+
+.bo {
+    height: 5px;
+    background-color: var(--bo);
+    transition:0.25s;
+    width: 100%;
+    border: none;
+    margin:0;
+}
+
+a{
+    text-decoration: none;
+    color:#0089ff;
+    font-weight:100;
+}
+
+li{
+    display: block;
+}
+
+#Er404{
+    text-align: center;
+    font-family: 'Century Gothic','Futura','Noto Sans JP','ヒラギノ角ゴ ProN','meiryo','メイリオ', sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    user-select: none;
+    font-size:40vh;
+    color: var(--white-text)
+}
+
+#Er404v{
+    width:100%;
+    position: absolute;
+    z-index: -1;
+    animation: fadeout 0.5s ease 12s;
+}
+
+@keyframes fadeOut{}
+
+.ふぉんと404{
+    box-shadow:0px 0px 25px #000000;
+}
+
+.ふぉんと {
+    font-family: 'Noto Sans JP','ヒラギノ角ゴ ProN','meiryo','メイリオ', sans-serif;
+    text-align: center;
+    color:var(--white-text);
+}
+
+.クソデカ {
+    font-size: 20vh;
+    font-weight: 700;
+    line-height: 1.25;
+}
+
+.ふぉんと h1 {
+    font-size: 10vh;
+    font-weight: 700;
+    line-height: 0.75;
+}
+
+.ふぉんと h2 {
+    font-size: 5vh;
+    font-weight: 700;
+    line-height:1;
+}
+
+.ふぉんと h3 {
+    font-size: 3vh;
+    font-weight:100;
+    line-height: 1;
+    margin:1vh 0;
+}
+
+.ふぉんと h4 {
+    font-size: 2vh;
+    font-weight:700;
+    line-height: 1;
+    margin:1vh 0;
+}
+
+.ふぉんと p {
+    font-size: 2vh;
+    line-height: 1;
+    margin:1vh 0;
+}
+
+@media screen and (max-width:425px){
+    .ふぉんと h1 {
+        font-size: 7vh;
+        font-weight: 700;
+        line-height: 1;
+    }
+    
+    .ふぉんと h2 {
+        font-size: 3vh;
+        font-weight: 700;
+        line-height: 1;
+    }
+    
+    .ふぉんと h3 {
+        font-size: 3vh;
+        font-weight:100;
+        line-height: 1;
+        margin:1vh 0;
+    }
+
+    .ふぉんと h4 {
+        font-size: 2vh;
+        font-weight:700;
+        line-height: 1;
+        margin:1vh 0;
+    }
+}
+
+.pink {
+    font-size: 3vh;
+    font-weight: 700;
+    line-height: 0.75;
+    color:#ff00ff
+}
+
+.イメージカラー{
+    color:#0089ff;
+    font-weight: 700;
+}
+
+.イメージカラー塗りつぶし{
+    background-color: #0089ff;
+    padding:0 5px;
+    font-family:'Century Gothic','Futura','Noto Sans JP','ヒラギノ角ゴ ProN','meiryo','メイリオ', sans-serif;
+    font-weight: lighter;
+}
+
+.bold{
+    font-weight: 700;
+}
+
+.下線{
+    border-bottom:#0089ff 10px solid;
+}
+
+.緑下線{
+    border-bottom:#00ff00 10px solid;
+}
+
+.左揃え{
+    text-align: left;
+}
+
+:root{
+    --white-text:#000000;
+    --white-color:#ffffff;
+    --menu:#ffffff;
+    --bo:#323232;
+    --dark:#4b4b4b;
+    --newsdiary:#e1e1e1;
+    --newsdiary2:#969696;
+    --ukr:#ffffff;
+}
+
+@media (prefers-color-scheme: dark){
+    :root{
+        --white-text:#ffffff;
+        --white-color:#323232;
+        --menu:#4b4b4b;
+        --bo:#ffffff;
+        --dark:#969696;
+        --newsdiary:#4b4b4b;
+        --newsdiary2:#232323;
+        --ukr:#232323;
+    }
+}
+
+::selection{
+    background: #0089ff;
+}
+
+.fullpagespace{
+    height:100vh;
+}
+
+.halfpagespace{
+    height:50vh;
+}
+
+.quarterpagespace{
+    height:25vh;
+}
+
+.タイトル{
+    font-weight:100;
+    padding-top:5.25em;
+    padding-bottom:0.5em;
+    background: linear-gradient(-135deg, #00ff00, #0089ff);
+    text-shadow:0.5px 0 5px rgb(50, 50, 50);
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.タイトル_index{
+    font-weight:100;
+    padding-top:10vh;
+    padding-bottom:0.5em;
+    background: linear-gradient(-135deg, #00ff00, #0089ff);
+    text-shadow:0.5px 0 5px rgb(50, 50, 50);
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.タイトル文字{
+    user-select: none;
+    font-size:300%;
+    font-weight:100;
+    font-weight: bolder;
+}
+
+#バージョン{
+    display: inline-block;
+    font-family: 'Century Gothic','Futura','Noto Sans JP','ヒラギノ角ゴ ProN','meiryo','メイリオ', sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    user-select: none;
+    font-size:150%;
+    font-weight: bold;
+}
+
+.タイトル_index_スマホ{
+    font-weight:100;
+    padding-top:10vh;
+    padding-bottom:0.5em;
+    background: linear-gradient(-135deg, #00ff00, #0089ff);
+    text-shadow:0.5px 0 5px rgb(50, 50, 50);
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.タイトル文字_スマホ{
+    user-select: none;
+    font-size:300%;
+    font-weight:100;
+    font-weight: bolder;
+}
+
+#バージョン_スマホ{
+    display: inline-block;
+    font-family: 'Century Gothic','Futura','Noto Sans JP','ヒラギノ角ゴ ProN','meiryo','メイリオ', sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    user-select: none;
+    font-size:150%;
+    font-weight: bold;
+}
+
+@media screen and (max-width:1280px){
+    .タイトル_index {
+        padding-top:9vh;
+    }
+    .タイトル {
+        padding-top:5.25em;
+    }
+}
+
+@media screen and (max-width:425px){
+    .タイトル {
+        padding-top:3em;
+        padding-bottom:0.5em;
+        background: linear-gradient(-135deg, #00ff00, #0089ff);
+        text-shadow:0.5px 0 5px rgb(50, 50, 50);
+        text-align: center;
+        color: #FFFFFF;
+    }
+    .タイトル_index {
+        position: fixed;
+        width:100%;
+        padding:0.5em 0.25em;
+        box-shadow:0px 0px 25px #000000;
+        background: linear-gradient(-135deg, #00ff00, #0089ff);
+        text-shadow:0.5px 0 5px rgb(50, 50, 50);
+        text-align: center;
+        color: #FFFFFF;
+    }
+    .タイトル文字 {
+        user-select: none;
+        font-size:100%;
+        font-weight:100;
+        font-size: 1.1em;
+        font-weight: bolder;
+    }
+    .バージョン {
+        font-family: 'Century Gothic','Noto Sans JP','ヒラギノ角ゴ ProN','meiryo','メイリオ', sans-serif;
+        font-weight: bold;
+        font-style: italic;
+        user-select: none;
+        font-size:75%;
+        font-weight: bold;
+    }
+}
+
+.ヘッダー{
+    position: fixed;
+    width:100%;
+}
+
+@media screen and (max-width:425px){
+    .ヘッダー{
+        display:none;
+    }
+}
+
+
+.スマホ用メニュー{
+    display: none;
+    pointer-events: none;
+}
+
+@media screen and (max-width:425px){
+    .スマホ用メニュー{
+        position: fixed;
+        pointer-events: auto;
+        display: block;
+        width:100%;
+        font-size:1.75em;
+        box-shadow:0px 0px 35px #000000;
+        background-color: var(--white-color);
+        transition:0.25s;
+        padding:0;
+        margin:0;
+        list-style: none;
+        transition:5s;
+    }
+    
+    .スマホ用メニュー summary{
+        display: block;
+        list-style: none;
+        height:5vh;
+    }
+
+    .スマホ用メニュー summary img{
+        width:100%;
+    }
+    
+    .スマホ用メニュー summary::-webkit-details-marker{
+        display:none;
+    }
+    
+    .スマホ用メニュー a{
+        text-decoration: none;
+        text-transform: uppercase;
+        color:var(--white-text);
+    }
+}
+
+.スマホ用メニュー_index{
+    display: none;
+    pointer-events: none;
+    width:100%;
+    box-shadow:0px 0px 35px #000000;
+    background-color: var(--white-color);
+    transition:0.25s;
+    padding:0;
+    margin-bottom:10em;
+    list-style: none;
+    transition:5s;
+}
+
+@media screen and (max-width:425px){
+    .スマホ用メニュー_index{
+        display: block;
+        position: fixed;
+        pointer-events: auto;
+    }
+}
+
+.スマホ用メニュー_index summary{
+    display: block;
+    list-style: none;
+    height:5vh;
+}
+
+.スマホ用メニュー_index summary img{
+    width:100%;
+}
+
+.スマホ用メニュー_index summary::-webkit-details-marker{
+    display:none;
+}
+
+.スマホ用メニュー_index a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color:var(--white-text);
+}
+
+.スマホ用空白{
+    display:none;
+    padding-bottom: 0.5em;
+}
+
+.スマホ用空白_index{
+    display:none;
+    padding-bottom: 3em;
+}
+
+@media screen and (max-width:425px){
+    .スマホ用空白{
+        display:block;
+        padding-bottom: 0.5em;
+    }
+    .スマホ用空白_index{
+        display:block;
+        padding-bottom: 3em;
+    }
+}
+
+.いちばんうえのメニュー {
+    font-family:'Noto Sans JP','ヒラギノ角ゴ ProN','meiryo','メイリオ', sans-serif;
+    font-weight: bold;
+    display:flex;
+    position: relative;
+    z-index:100;
+    list-style: none;
+    backdrop-filter:blur(25px) brightness(1.25);
+    transition:0.25s;
+    text-align: center;
+    text-transform: uppercase;
+    box-shadow:0px 0px 35px #000000;
+}
+
+.いちばんうえのメニュー li {
+    position: relative;
+    z-index:100;
+    font-size: 3vh;
+    margin-top: 0.75em;
+    margin-bottom: 0.75em;
+    margin-left: 1.5em;
+    text-shadow:0px 0px 3px #323232bd;
+}
+
+@media screen and (max-width:1280px){
+    .いちばんうえのメニュー li{
+        font-size: 2.5vh;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        margin-left: 1em;
+    }
+}
+
+.いちばんうえのメニュー li a {
+    color: var(--white-text);
+    transition:0.25s;
+    text-decoration: none;
+}
+
+.いちばんうえのメニュー li a:hover {
+        
+    color: rgb(0, 140, 255);
+}
+
+.いちばんうえのメニュー_index {
+    font-family:'Noto Sans JP','ヒラギノ角ゴ ProN','meiryo','メイリオ', sans-serif;
+    font-weight: bold;
+    display:flex;
+    position: relative;
+    z-index:100;
+    list-style: none;
+    backdrop-filter:blur(25px) brightness(1.25);
+    transition:0.25s;
+    text-align: center;
+    text-transform: uppercase;
+    box-shadow:0px 0px 35px #000000;
+}
+
+.いちばんうえのメニュー_index li {
+    position: relative;
+    z-index:100;
+    font-size: 3vh;
+    margin-top: 0.75em;
+    margin-bottom: 0.75em;
+    margin-left: 1.5em;
+    text-shadow:0px 0px 3px #323232bd;
+}
+
+@media screen and (max-width:1280px){
+    .いちばんうえのメニュー_index li{
+        font-size: 2.5vh;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        margin-left: 1em;
+    }
+}
+
+.いちばんうえのメニュー_index li a {
+    color: var(--white-text);
+    text-decoration: none;
+}
+
+.いちばんうえのメニュー_index li a:hover {
+        
+    color: rgb(0, 140, 255);
+}
+
+.YouTube{
+    position: fixed;
+    right:1em;
+    top:0.5em;
+}
+
+.YouTubeHeadSize{
+    display: block;
+    width:4vw;
+}
+
+.YouTubeHeadSizeDark{
+    display: none;
+    width:4vw;
+}
+
+@media (prefers-color-scheme: dark){
+    .YouTubeHeadSize{
+        display: none;
+        width:4vw;
+    }
+
+    .YouTubeHeadSizeDark{
+        display: block;
+        width:4vw;
+    }
+}
+
+.アイコン{
+    height:5em;
+    margin: 0;
+    padding: 0;
+}
+
+.ヘッダーのタイトル{
+    color:#FFFFFF;
+    font-size: 2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow:0.25px 0 5px rgb(50, 50, 50);
+    background: linear-gradient(-135deg, #00ff00, #0089ff);
+}
+
+.ヘッダーロゴ{
+    width: 4%;
+    height:4%;
+    padding:0.5em;
+    background:#0089ff;
+}
+
+.ちょい薄{
+    background-color:#232323;
+    transition:0.25s;
+    height:calc(2rem + 50px);
+}
+
+.いちばんしたのメニュー{
+    display: flex;
+    float:left;
+    list-style: none;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.いちばんしたのメニュー li {
+    margin-left: 36px;
+}
+
+.いちばんしたのメニュー li a {
+    color: var(--white-text);
+    text-decoration: none;
+}
+
+.いちばんしたのメニュー li a:hover {
+        
+    color: rgb(0, 140, 255);
+}
+
+.スマホ用いちばんしたのメニュー{
+    display: none;
+    list-style: none;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    text-align: left;
+}
+.スマホ用いちばんしたのメニュー li {
+    margin-left: 36px;
+}
+
+.スマホ用いちばんしたのメニュー li a {
+    color: var(--white-text);
+    text-decoration: none;
+}
+
+.スマホ用いちばんしたのメニュー li a:hover {
+        
+    color: rgb(0, 140, 255);
+}
+
+@media screen and (max-width:425px){
+    .いちばんしたのメニュー{
+        display:none;
+    }
+    .スマホ用いちばんしたのメニュー{
+        display:block;
+    }
+}
+
+.スマホ用警告{
+    display: none;
+}
+
+@media screen and (max-width:425px){
+    .スマホ用警告{
+        display: block;
+        color:#ff0000;
+    }
+}
+
+.ロゴ共{
+    margin:0.75em auto;
+    display: block;
+}
+
+.ロゴ共ダーク{
+    margin:0.75em auto;
+    display: none;
+}
+
+.ロゴ共間隔{
+    margin:1em;
+}
+
+.ロゴ共サイズ{
+    width:5vw;
+}
+
+.下ロゴ共間隔{
+    margin:0 0.5em 1em 0.5em;
+}
+
+.下ロゴ共{
+    display:flex;
+    float:right;
+    margin:1em 1em 0 0;
+    display: block;
+}
+
+.下ロゴ共ダーク{
+    display:flex;
+    right:0;
+    bottom:0;
+    margin:1em 1em 0 0;
+    display: none;
+}
+
+.下ロゴ共サイズ{
+    width:3vw;
+}
+
+@media screen and (max-width:425px){
+    .ロゴ共間隔{
+        margin:0.5em;
+    }
+    .ロゴ共サイズ{
+        width:12.5vw;
+    }
+    .下ロゴ共{
+        display:flex;
+        float:left;
+        margin:0 1em 0 1.5em;
+    }
+    .下ロゴ共間隔{
+        margin:0,5em;
+    }
+    .下ロゴ共サイズ{
+        width:12.5vw;
+    }
+}
+
+
+@media (prefers-color-scheme: dark){
+    .ロゴ共{
+        margin:0.75em auto;
+        display: none;
+    }
+
+    .ロゴ共ダーク{
+        margin:0.75em auto;
+        display: block;
+    }
+
+    .下ロゴ共{
+        display:flex;
+        float:right;
+        margin:1em 1em 0 0;
+        display: none;
+    }
+    
+    .下ロゴ共ダーク{
+        display:flex;
+        float:right;
+        margin:1em 1em 0 0;
+        display: block;
+    }
+}
+
+
+.ｺﾝﾆﾁﾜ {
+    display: inline-block;
+    cursor: pointer;
+    width: 10%;
+    text-align: center;
+    color:#FFFFFF;
+    background-color:#7d7d7d;
+    padding: 10px;
+    border-radius: 0.5em;
+    box-shadow:0 0 5px #000000;
+}
+
+@media screen and (max-width:425px){
+    .ｺﾝﾆﾁﾜ {
+        width: 50%;
+        padding: 25px;
+        font-size: 1.5em;
+    }
+}
+
+.ｺﾝﾆﾁﾜ:hover {
+    background-color:#646464;
+}
+
+#background{
+    color:#ffffff;
+    text-shadow:0 0 5px #000000;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index:-1;
+}
+
+.backgroundfilter{
+    backdrop-filter:brightness(0.75);
+    box-shadow: 0px -10vh 7vh -20px var(--white-color) inset;
+    transition: 0.5s;
+}
+
+.ボタン {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background: #0089ff;
+    font-weight: bold;
+    padding: 2vh 5vh;
+    border-radius: 0.5em;
+    margin:0.1em 0px;
+}
+
+.ボタン:hover {
+    background: #0070c0;
+    color: #FFFFFF;
+}
+
+@media screen and (max-width:425px){
+    .ボタン {
+        display:block;
+        text-decoration: none;
+        color: white;
+        background: #0089ff;
+        font-size: 1.5em;
+        font-weight: bold;
+        padding: 1.5vh 0px;
+        border-radius: 0.5em;
+        margin:0.5em;
+    }
+}
+
+.ボタン2 {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background: #0089ff;
+    font-weight: bold;
+    padding: 1vh;
+    border-radius: 0.5em;
+    margin:0.1em 0px;
+}
+
+.ボタン2:hover {
+    background: #0070c0;
+    color: #FFFFFF;
+}
+
+@media screen and (max-width:425px){
+    .ボタン2 {
+        display:block;
+        text-decoration: none;
+        color: white;
+        background: #0089ff;
+        font-size: 1.5em;
+        font-weight: bold;
+        padding: 1.5vh 0px;
+        border-radius: 0.5em;
+        margin:0.5em;
+        text-align: center;
+    }
+}
+
+#画像付ボタン標準{
+    width: 15em;
+    height: 15em;
+}
+
+#画像付ボタン横長{
+    width: 30em;
+    height: 15em;
+}
+
+#画像付ボタン超横長{
+    width: 45em;
+    height: 15em;
+}
+
+#画像付ボタン超超横長{
+    width: 60em;
+    height: 15em;
+}
+
+#画像付ボタン_3文{
+    padding:2em 0 1.85em;
+}
+
+#画像付ボタン_2文{
+    padding:2em 0 2.45em;
+}
+
+.画像付ボタン {
+    display:inline-flex;
+    position: relative;
+    text-decoration: none;
+    margin:0.5em;
+}
+
+.画像付ボタン_画像{
+    position: relative;
+    border-radius:0.5em;
+}
+
+.画像付ボタン:hover .画像付ボタン_文{
+    backdrop-filter:blur(25px) brightness(0.9);
+    opacity: 1;
+}
+
+.画像付ボタン_文{
+    display: block;
+    position:absolute;
+    top:0;
+    right:0;
+    left:0;
+    text-decoration: none;
+    text-align: center;
+    color: var(--white-text);
+    font-size:2em;
+    border-radius: 0.25em;
+    opacity: 0;
+    transition: 0.25s ease-in;
+}
+
+.画像付ボタン_文1 {
+    font-size:1.5em;
+    filter:drop-shadow(0px 0px 2.5px #000000);
+}
+
+.画像付ボタン_文2 {
+    margin-top:0.25em;
+    font-size:0.5em;
+    filter:drop-shadow(0px 0px 2.5px #000000);
+}
+
+.画像付ボタン_文3 {
+    margin-top:0.25em;
+    font-size:0.35em;
+    filter:drop-shadow(0px 0px 2.5px #000000);
+}
+
+.縦並び用ボタン {
+    display: inline-block;
+    padding:0.25em 0px;
+    margin:0.1em;
+    width:15%;
+    text-decoration: none;
+    color: white;
+    background: #0089ff;
+    font-weight: bold;
+}
+
+.縦並び用ボタン:hover {
+    background: #0070c0;
+    color: #FFFFFF;
+}
+
+.縦並び用ボタン#start {
+    display: inline-block;
+    padding:0.25em 0px;
+    margin:0.1em;
+    width:15%;
+    text-decoration: none;
+    color: white;
+    background: #0089ff;
+    font-weight: bold;
+    border-radius:0.5em 0.5em 0px 0px;
+}
+
+.縦並び用ボタン#start:hover {
+    background: #0070c0;
+    color: #FFFFFF;
+}
+
+.縦並び用ボタン#end {
+    display: inline-block;
+    padding:0.25em 0px;
+    margin:0.1em;
+    width:15%;
+    text-decoration: none;
+    color: white;
+    background: #0089ff;
+    font-weight: bold;
+    border-radius:0px 0px 0.5em 0.5em;
+}
+
+.縦並び用ボタン#end:hover {
+    background: #0070c0;
+    color: #FFFFFF;
+}
+
+@media screen and (max-width:425px){
+    .縦並び用ボタン {
+        width:50%;
+    }
+    .縦並び用ボタン#start {
+        width:50%;
+    }
+    .縦並び用ボタン#end {
+        width:50%;
+    }
+}
+
+.logo {
+    width:12.5%;
+    display: inline-block;
+    box-shadow:0px 0px 0.5em #000000;
+    margin: 0px 1em;
+}
+
+.ホーム自己紹介 {
+    text-align: left;
+    display: inline-block;
+    font-size: 100%;
+}
+
+.お知らせ{
+    background:linear-gradient(135deg,#0089ff 38%,#4bafff 38%);
+    border-radius: 1em;
+    width:40%;
+    margin:auto;
+    text-align: left;
+}
+
+@media screen and (max-width:1280px){
+    .お知らせ{
+        background:linear-gradient(135deg,#0089ff 37%,#4bafff 37%);
+        width:50%;
+    }
+}
+
+@media screen and (max-width:425px){
+    .お知らせ{
+        background:#0089ff;
+        width:90%;
+        text-align: center;
+    }
+    .お知らせ文字{
+        padding-left:0px;
+    }
+    .お知らせタイトル{
+        display: none;
+    }
+}
+
+.お知らせ文字{
+    font-size: 3em;
+    font-weight: bold;
+    padding-left:0.25em;
+}
+
+.お知らせタイトル{
+    font-size: 1em;
+    font-weight: bold;
+    padding-left:1em;
+}
+
+#お知らせ{
+    color:#ffffff;
+}
+
+.中央寄せの左寄せ{
+    width:60%;
+    text-align: left;
+    margin:0 auto;
+}
+
+.中央寄せの左寄せ#VHS風{
+    width:36%;
+    text-align: left;
+    margin:0 auto;
+}
+
+
+.中央寄せの左寄せ#対応機種{
+    width:40%;
+    text-align: left;
+    margin:0 auto;
+}
+
+.中央寄せの左寄せ#相互リンク{
+    width:75%;
+    text-align: left;
+    margin:0 auto;
+}
+
+@media screen and (max-width:425px){
+    .中央寄せの左寄せ{
+        width:90%;
+        text-align: left;
+        margin:0 auto;
+    }
+    .中央寄せの左寄せ#対応機種{
+        width:90%;
+    }
+    .中央寄せの左寄せ#相互リンク{
+        width:90%;
+    }
+}
+
+.４：３とか用{
+    display:none;
+}
+
+@media screen and (max-width:1280px){
+    .４：３とか用{
+        display: block;
+    }
+}
+
+.YouTube{
+    width:32vw;
+    height:18vw;
+    box-shadow:0px 0px 5px #4b4b4b;
+}
+
+@media screen and (max-width:425px){
+    .YouTube{
+        width:64vw;
+        height:36vw;
+        box-shadow:0px 0px 5px #4b4b4b;
+    }
+}
+
+#YouTube{
+    width:5vw;
+    margin:0 0.75em;
+    color:var(--white-text);
+    font-size: 1em;
+}
+
+#YouTubeSub{
+    width:5vw;
+    margin:0 0.75em;
+    color:var(--white-text);
+    font-size: 1em;
+}
+
+#YouTubeLive{
+    width:5vw;
+    margin:0 0.75em;
+    color:var(--white-text);
+    font-size: 1em;
+}
+
+#misskey{
+    width:5vw;
+    margin:0 0.75em 0.1em 0.75em;
+    color:var(--white-text);
+}
+
+#Discord{
+    width:3.75vw;
+    margin:0 0.75em 0.25em 0.75em;
+    color:var(--white-text);
+}
+
+#github{
+    width:3.75vw;
+    margin:2em 0.75em 0 0.75em;
+    color:var(--white-text);
+}
+
+#githubhome{
+    width:3.75vw;
+    margin:2em 0.75em 0 0.75em;
+    color:var(--white-text);
+    background:#969696;
+}
+
+#pixiv{
+    width:5vw;
+    margin:0.75em;
+    color:var(--white-text);
+}
+
+#scratch{
+    width:3.5vw;
+    margin:0.5em;
+    color:var(--white-text);
+}
+
+#YouTubebo,#Discordbo,#pixivbo{
+    width:3vw;
+    margin-right:2em;
+    color:var(--white-text);
+}
+
+#Twitterbo{
+    width:3vw;
+    margin:0 2em 0.1em 0;
+    color:var(--white-text);
+}
+
+#githubbo{
+    width:3vw;
+    margin:0 2em 0.75em 0;
+    color:var(--white-text);
+}
+
+.環境{
+    border-top:2px var(--bo) solid;
+    border-bottom:2px var(--bo) solid;
+}
+
+.環境 summary{
+    font-size: 3vh;
+    line-height: 6vh;
+    padding:0 0.5em;
+}
+
+.環境#start{
+    border-top:4px var(--bo) solid;
+    border-bottom:2px var(--bo) solid;
+}
+
+.環境#end{
+    border-top:2px var(--bo) solid;
+    border-bottom:4px var(--bo) solid;
+}
+
+.日記のための背景 {
+    background: linear-gradient(-135deg, #00ff00, #0089ff);
+}
+
+.戻る{
+    position:fixed;
+    left:1em;
+    top:6em;
+    margin-right:auto;
+    text-align: left;
+    width: 5vw;
+}
+
+@media screen and (max-width:425px){
+    .戻る{
+        left:2vw;
+        top:6em;
+        width: 15vw;
+    }
+}
+
+.デスクトップ背景{
+    width:20vw;
+    box-shadow:0 0 0.5em #000000;
+    margin:2vw;
+}
+
+.デスクトップ背景配布ページ{
+    display: flex;
+    justify-content:start;
+    flex-flow:row wrap;
+}
+
+.デスクトップ背景配布ページ li{
+    list-style:none;
+    text-align: center;
+}
+
+.デスクトップ背景配布ページ h3{
+    width:20vw;
+    overflow-wrap: normal;
+    margin-bottom:1em;
+    margin-left:auto;
+    margin-right:auto;
+    font-weight: bold;
+}
+
+.デスクトップ背景配布ページ p{
+    width:20vw;
+    overflow-wrap: normal;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+
+@media screen and (max-width:425px){
+    .デスクトップ背景{
+        width:45vw;
+        box-shadow:0 0 0.5em #000000;
+        margin:2.5vw;
+    }
+
+    .デスクトップ背景配布ページ h3{
+        width:45vw;
+        overflow-wrap: normal;
+        margin-left:auto;
+        margin-right:auto;
+        font-weight: bold;
+        font-size:1em;
+    }
+
+    .デスクトップ背景配布ページ p{
+        width:45vw;
+        overflow-wrap: normal;
+        margin-left:auto;
+        margin-right:auto;
+    }
+}
+
+.デスクトップ背景テキスト{
+    display: block;
+}
+
+.過去バージョン作成日{
+    margin-left:0.5em;
+    font-size:1em;
+}
+
+.過去バージョン棒{
+    margin:0.5em auto;
+    padding-bottom:0.25em;
+    border-bottom:0.5em #ff0000 solid;
+    width:25%;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+@media screen and (max-width:425px){
+    .過去バージョン棒{
+        width:85%;
+    }
+}
+
+.対応機種{
+    border-collapse: collapse;
+    margin:0px auto;
+}
+
+.対応機種 td{
+    border:4px solid var(--dark);
+    padding:0.5em;
+    margin:0px;
+}
+
+@media screen and (max-width:425px){
+    .対応機種{
+        margin: 0.5em;
+    }
+}
+
+.構文{
+    border-collapse: collapse;
+    margin:0px 5%;
+    text-align:left;
+}
+
+.構文 td{
+    border:4px solid var(--dark);
+    padding:0.5em;
+    margin:0px;
+    width:15%;
+}
+
+.構文 td#標準t{
+    background-color: #c8c8c8;
+    text-align: center;
+}
+
+.構文 td#ふらめん構文t{
+    background-color: #0089ff;
+    text-align: center;
+}
+
+.構文 td#みつる構文t{
+    background-color: #00ff00;
+    text-align: center;
+}
+
+.構文 td#sspeed構文t{
+    background-color: #00ff00;
+    text-align: center;
+}
+
+.構文 td#標準{
+    background:linear-gradient(90deg,var(--white-color) 90%,#c8c8c8 10%);
+}
+
+.構文 td#ふらめん構文{
+    background:linear-gradient(90deg,var(--white-color) 90%,#0089ff 10%);
+}
+
+.構文 td#みつる構文{
+    background:linear-gradient(90deg,var(--white-color) 90%,#00ff00 10%);
+}
+
+.構文 td#sspeed構文{
+    background:linear-gradient(90deg,var(--white-color) 90%,#00ff00 10%);
+}
+
+@media screen and (max-width:425px){
+    .構文{
+        border-collapse: collapse;
+        margin:0px 1em;
+        text-align:left;
+    }
+    .構文 td{
+        border:4px solid var(--dark);
+        padding:0.5em;
+        margin:0px;
+        width:15%;
+    }
+}
+
+.お知らせ日記{
+    text-align: left;
+    width:25%;
+    padding:0.5em;
+    margin:auto;
+    background:var(--newsdiary);
+    border:0.25em var(--newsdiary2) solid; 
+}
+
+@media screen and (max-width:1280px){
+    .お知らせ日記{
+        width:40%;
+    }
+}
+
+@media screen and (max-width:425px){
+    .お知らせ日記{
+        width:90%;
+    }
+}
+
+#お知らせ日記{
+    color: var(--white-text);
+}
+
+#お知らせ日記:hover{
+    text-decoration:underline;
+}
+
+.red{
+    color:#ff0000;
+    font-weight: bold;
+}
+
+.yellow{
+    color:#ffdd00;
+    font-weight: bold;
+}
+
+.blue{
+    color:#0000ff;
+    font-weight: bold;
+}
+
+.green{
+    color:#00ff00;
+    font-weight: bold;
+}
+
+.td空白{
+    border:none;
+}
