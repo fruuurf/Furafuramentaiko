@@ -253,7 +253,7 @@ li{
 
 .タイトル{
     font-weight:100;
-    padding-top:5.25em;
+    padding-top:6vh;
     padding-bottom:0.5em;
     background: linear-gradient(-135deg, #00ff00, #0089ff);
     text-shadow:0.5px 0 5px rgb(50, 50, 50);
@@ -263,7 +263,7 @@ li{
 
 .タイトル_index{
     font-weight:100;
-    padding-top:10vh;
+    padding-top:6vh;
     padding-bottom:0.5em;
     background: linear-gradient(-135deg, #00ff00, #0089ff);
     text-shadow:0.5px 0 5px rgb(50, 50, 50);
@@ -317,10 +317,10 @@ li{
 
 @media screen and (max-width:1280px){
     .タイトル_index {
-        padding-top:9vh;
+        padding-top:5.5vh;
     }
     .タイトル {
-        padding-top:5.25em;
+        padding-top:5.5vh;
     }
 }
 
@@ -493,18 +493,18 @@ li{
 .いちばんうえのメニュー li {
     position: relative;
     z-index:100;
-    font-size: 3vh;
-    margin-top: 0.75em;
-    margin-bottom: 0.75em;
+    font-size: 2.5vh;
+    margin-top: 0.25em;
+    margin-bottom: 0.4em;
     margin-left: 1.5em;
     text-shadow:0px 0px 3px #323232bd;
 }
 
 @media screen and (max-width:1280px){
     .いちばんうえのメニュー li{
-        font-size: 2.5vh;
-        margin-top: 1em;
-        margin-bottom: 1em;
+        font-size: 2.25vh;
+        margin-top: 0.25em;
+        margin-bottom: 0.35em;
         margin-left: 1em;
     }
 }
@@ -520,49 +520,6 @@ li{
     color: rgb(0, 140, 255);
 }
 
-.いちばんうえのメニュー_index {
-    font-family:'Noto Sans JP','ヒラギノ角ゴ ProN','meiryo','メイリオ', sans-serif;
-    font-weight: bold;
-    display:flex;
-    position: relative;
-    z-index:100;
-    list-style: none;
-    backdrop-filter:blur(25px) brightness(1.25);
-    transition:0.25s;
-    text-align: center;
-    text-transform: uppercase;
-    box-shadow:0px 0px 35px #000000;
-}
-
-.いちばんうえのメニュー_index li {
-    position: relative;
-    z-index:100;
-    font-size: 3vh;
-    margin-top: 0.75em;
-    margin-bottom: 0.75em;
-    margin-left: 1.5em;
-    text-shadow:0px 0px 3px #323232bd;
-}
-
-@media screen and (max-width:1280px){
-    .いちばんうえのメニュー_index li{
-        font-size: 2.5vh;
-        margin-top: 1em;
-        margin-bottom: 1em;
-        margin-left: 1em;
-    }
-}
-
-.いちばんうえのメニュー_index li a {
-    color: var(--white-text);
-    text-decoration: none;
-}
-
-.いちばんうえのメニュー_index li a:hover {
-        
-    color: rgb(0, 140, 255);
-}
-
 .YouTube{
     position: fixed;
     right:1em;
@@ -572,14 +529,26 @@ li{
 .Headicon{
     float: inline-end;
     position: absolute;
-    right: 1em;
+    right: 0.5em;
     filter:drop-shadow(0px 0px 3px #32323252);
 }
 
 .Headiconsize{
-    width:3.5em;
-    height:3.5em;
-    margin:0.75em 0.25em 0 0;
+    width:3.5vh;
+    height:3.5vh;
+    margin:0.5em 0.15em 0 0;
+}
+
+@media screen and (max-width:1280px){
+    .Headicon{
+        right: 0.5em;
+    }
+    
+    .Headiconsize{
+        width:3vh;
+        height:3vh;
+        margin:0.5em 0.15em 0 0;
+    }
 }
 
 .アイコン{
@@ -935,6 +904,11 @@ li{
     filter:drop-shadow(0px 0px 2.5px #000000);
 }
 
+.画像付ボタン_文1#double{
+    font-size:1em;
+    line-height: 2.2em;
+}
+
 .画像付ボタン_文2 {
     margin-top:0.25em;
     font-size:0.5em;
@@ -1023,18 +997,11 @@ li{
 }
 
 .お知らせ{
-    background:linear-gradient(135deg,#0089ff 38%,#4bafff 38%);
-    border-radius: 1em;
     width:40%;
     margin:auto;
     text-align: left;
-}
-
-@media screen and (max-width:1280px){
-    .お知らせ{
-        background:linear-gradient(135deg,#0089ff 37%,#4bafff 37%);
-        width:50%;
-    }
+    background: linear-gradient(90deg,#0089ff 13.5rem,#4bafff 13.5rem);
+    border-radius: 1rem;
 }
 
 @media screen and (max-width:425px){
@@ -1054,17 +1021,28 @@ li{
 .お知らせ文字{
     font-size: 3em;
     font-weight: bold;
-    padding-left:0.25em;
+    padding-left:1rem;
+    padding-right:0.5rem;
+    margin:0;
+    height:3em;
 }
 
 .お知らせタイトル{
-    font-size: 1em;
+    font-size:1em;
     font-weight: bold;
-    padding-left:1em;
+    padding-top:2em;
+    padding-left:0.5rem;
+    padding-right:1rem;
+    margin:0;
+    height: 3em;
 }
 
 #お知らせ{
     color:#ffffff;
+}
+
+.右寄せ{
+    text-align: right;
 }
 
 .中央寄せの左寄せ{
@@ -1206,25 +1184,36 @@ li{
     color:var(--white-text);
 }
 
+.環境親{
+    border-top:4px var(--bo) solid;
+}
+
+.環境親 summary{
+    font-size: 3vh;
+    line-height: 8vh;
+    padding:0 0.5em;
+    cursor:pointer;
+}
+
 .環境{
-    border-top:2px var(--bo) solid;
-    border-bottom:2px var(--bo) solid;
+    margin-left:2em;
+    border-top:4px var(--bo) solid;
 }
 
 .環境 summary{
     font-size: 3vh;
     line-height: 6vh;
     padding:0 0.5em;
+    cursor:pointer;
 }
 
-.環境#start{
-    border-top:4px var(--bo) solid;
-    border-bottom:2px var(--bo) solid;
-}
-
-.環境#end{
-    border-top:2px var(--bo) solid;
-    border-bottom:4px var(--bo) solid;
+.環境bo{
+    height:4px;
+    background-color: var(--bo);
+    transition:0.25s;
+    width:100%;
+    border:none;
+    margin:0;
 }
 
 .日記のための背景 {
@@ -1437,6 +1426,35 @@ li{
 
 #お知らせ日記:hover{
     text-decoration:underline;
+}
+
+.お知らせ日記all{
+    width:25%;
+    text-align: right;
+    margin:auto;
+}
+
+@media screen and (max-width:1280px){
+    .お知らせ日記all{
+        width:40%;
+    }
+}
+
+@media screen and (max-width:425px){
+    .お知らせ日記all{
+        width:90%;
+    }
+}
+
+#お知らせ日記all{
+    color:var(--white-text);
+    font-weight: bold;
+}
+
+#お知らせ日記allin{
+    font-size:1.5em;
+    font-weight: bold;
+    line-height:1.5em;
 }
 
 .red{
