@@ -220,6 +220,7 @@ li{
     --newsdiary:#e1e1e1;
     --newsdiary2:#969696;
     --ukr:#ffffff;
+    --ちょい薄:#e1e1e1;
 }
 
 @media (prefers-color-scheme: dark){
@@ -232,6 +233,7 @@ li{
         --newsdiary:#4b4b4b;
         --newsdiary2:#232323;
         --ukr:#232323;
+        --ちょい薄:#232323;
     }
 }
 
@@ -300,7 +302,7 @@ li{
 
 .タイトル文字_スマホ{
     user-select: none;
-    font-size:300%;
+    font-size:100%;
     font-weight:100;
     font-weight: bolder;
 }
@@ -311,7 +313,7 @@ li{
     font-weight: bold;
     font-style: italic;
     user-select: none;
-    font-size:150%;
+    font-size:100%;
     font-weight: bold;
 }
 
@@ -496,7 +498,7 @@ li{
     font-size: 2.5vh;
     margin-top: 0.25em;
     margin-bottom: 0.4em;
-    margin-left: 1.5em;
+    margin-left: 1em;
     text-shadow:0px 0px 3px #323232bd;
 }
 
@@ -527,6 +529,15 @@ li{
 }
 
 .Headicon{
+    display: block;
+    float: inline-end;
+    position: absolute;
+    right: 0.5em;
+    filter:drop-shadow(0px 0px 3px #32323252);
+}
+
+.HeadiconDark{
+    display: none;
     float: inline-end;
     position: absolute;
     right: 0.5em;
@@ -537,6 +548,16 @@ li{
     width:3.5vh;
     height:3.5vh;
     margin:0.5em 0.15em 0 0;
+    border-radius: 0.25em;
+}
+
+@media (prefers-color-scheme: dark){
+    .Headicon{
+        display: none;
+    }
+    .HeadiconDark{
+        display:block;
+    }
 }
 
 @media screen and (max-width:1280px){
@@ -575,7 +596,7 @@ li{
 }
 
 .ちょい薄{
-    background-color:#232323;
+    background-color:var(--ちょい薄);
     transition:0.25s;
     height:calc(2rem + 50px);
 }
@@ -642,6 +663,7 @@ li{
 @media screen and (max-width:425px){
     .スマホ用警告{
         display: block;
+        font-weight: bold;
         color:#ff0000;
     }
 }
@@ -658,10 +680,12 @@ li{
 
 .ロゴ共間隔{
     margin:1em;
+    position: relative;
 }
 
 .ロゴ共サイズ{
     width:5vw;
+    border-radius: 0.5em;
 }
 
 .下ロゴ共間隔{
@@ -685,6 +709,7 @@ li{
 
 .下ロゴ共サイズ{
     width:3vw;
+    border-radius: 0.5em;
 }
 
 @media screen and (max-width:425px){
@@ -732,6 +757,28 @@ li{
         margin:1em 1em 0 0;
         display: block;
     }
+}
+
+.ロゴ共吹き出し{
+    display: inline-block;
+    opacity:0;
+    visibility:hidden;
+    position:absolute;
+    left:50%;
+    transform: translateX(-50%);
+    top:2.5em;
+    padding:0.5em;
+    color:#fff;
+    border-radius: 0.5em;
+    white-space: nowrap;
+    background:#232323;
+    box-shadow: #000000 0 0 5px;
+    transition: 0.25s;
+}
+
+.ロゴ共間隔:hover .ロゴ共吹き出し{
+    opacity: 1;
+    visibility: visible;
 }
 
 #ｺﾝﾆﾁﾜ {
@@ -842,6 +889,7 @@ li{
 #画像付ボタン標準{
     width: 15em;
     height: 15em;
+    margin-left:0.25em
 }
 
 #画像付ボタン横長{
@@ -851,11 +899,6 @@ li{
 
 #画像付ボタン超横長{
     width: 45em;
-    height: 15em;
-}
-
-#画像付ボタン超超横長{
-    width: 60em;
     height: 15em;
 }
 
@@ -872,6 +915,7 @@ li{
     position: relative;
     text-decoration: none;
     margin:0.5em;
+    filter:drop-shadow(0 0 5px #000);
 }
 
 .画像付ボタン_画像{
@@ -892,7 +936,7 @@ li{
     left:0;
     text-decoration: none;
     text-align: center;
-    color: var(--white-text);
+    color:#fff;
     font-size:2em;
     border-radius: 0.25em;
     opacity: 0;
