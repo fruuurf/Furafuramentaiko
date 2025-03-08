@@ -1,0 +1,319 @@
+body{
+    margin:0;
+    padding:0;
+    background-color:#191919;
+    color:white;
+    font-family:'Noto Sans JP','ヒラギノ角ゴ ProN','meiryo','メイリオ', sans-serif;
+}
+
+html{
+    margin:0;
+    padding:0;
+}
+
+::-webkit-scrollbar{
+    width:15px;
+}
+
+::-webkit-scrollbar-track{
+    background:#323232;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #4b4b4b;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: #414141;
+}
+
+::-webkit-scrollbar-thumb:active{
+    background: #232323;
+}
+
+::selection{
+    background: #0089ff;
+}
+
+h1{
+    font-family:'BIZ UDPゴシック','Noto Sans JP','ヒラギノ角ゴ ProN','meiryo','メイリオ', sans-serif;;
+    font-size:5rem;
+    font-weight: bolder;
+}
+
+h2{
+    font-family:'BIZ UDPゴシック','Noto Sans JP','ヒラギノ角ゴ ProN','meiryo','メイリオ', sans-serif;;
+    font-size:3rem;
+    font-weight: bolder;
+    line-height: 125%;
+    margin:0;
+}
+
+h3{
+    font-family:'BIZ UDPゴシック','Noto Sans JP','ヒラギノ角ゴ ProN','meiryo','メイリオ', sans-serif;;
+    font-size:2rem;
+    font-weight: bolder;
+    line-height: 125%;
+    margin:0;
+}
+
+h4{
+    display: inline-block;
+    font-family:'BIZ UDPゴシック','Noto Sans JP','ヒラギノ角ゴ ProN','meiryo','メイリオ', sans-serif;;
+    font-size:1rem;
+    font-weight: lighter;
+    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.25);
+    border-radius: 0.25vw;
+    padding:0.25vw;
+    margin:0.5rem;
+}
+
+p{
+    font-family:'BIZ UDPゴシック','Noto Sans JP','ヒラギノ角ゴ ProN','meiryo','メイリオ', sans-serif;;
+    font-size:1rem;
+    font-weight: lighter;
+    line-height: 125%;
+    margin:0.5rem;
+}
+
+.blueblur{
+    filter:saturate(200%);
+    background-color: rgba(0, 137, 255, 0.5);
+    padding:0.25rem 0.5rem;
+    border-radius:0.5rem;
+    display: inline-block;
+    text-shadow: none;
+    backdrop-filter: blur(7.5px);
+}
+
+.虚無{
+    color:rgba(255, 255, 255, 0);
+    margin:50vh 0;
+    user-select: none;
+}
+
+.虚無グラデ{
+    margin:0;
+    padding:50vh 50vh;
+    border-right:10px solid;
+    border-left:10px solid;
+    border-image: linear-gradient(to bottom,#191919 30%,#0089ff 70%,#191919 100%);
+    border-image-slice: 1;
+    user-select: none;
+}
+
+.title{
+    font-size:7vw;
+    font-weight:bolder;
+    text-align: center;
+    text-shadow: 0 0 10px #000000;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.YouTubeT{
+    font-family:'Futura','Century Gothic','Noto Sans JP','ヒラギノ角ゴ ProN','meiryo','メイリオ', sans-serif;;
+    font-size:3rem;
+    font-weight: bolder;
+    font-style: italic;
+    line-height: 125%;
+    margin:0;
+
+    filter:saturate(200%);
+    background-color: rgba(255, 0, 0, 0.5);
+    padding:0.25rem 0.5rem;
+    border-radius:0.5rem;
+    display: inline-block;
+    text-shadow: none;
+}
+
+.blueback{
+    font-family:'MS UI Gothic','Noto Sans JP','ヒラギノ角ゴ ProN','meiryo','メイリオ', sans-serif;;
+    font-size:3rem;
+    font-weight:lighter;
+    line-height: 125%;
+    margin:0 auto;
+    color:#fff;
+    background: #00f;
+    display: block;
+    text-align: center;
+    width:fit-content;
+}
+
+.m1{
+    text-align: center;
+}
+
+.m2{
+    text-align: center;
+}
+
+
+.titlehelp{
+    width:100%;
+    height:100vh;
+    display: table;
+}
+
+.m1notsticky{
+    position: relative;
+    z-index: 1;
+    top:-100vh;
+}
+
+.TopImg{
+    display: block;
+    height:100vh;
+    position:sticky;
+    z-index:-1;
+    top:0;
+    margin:0 auto;
+}
+
+.blur{
+    backdrop-filter: blur(25px);
+    padding:1rem 0;
+    text-shadow: 0 0 0.25rem #000000;
+}
+
+.txtshadow{
+    text-shadow: 0 0 0.25rem #000000;
+}
+
+.shadow{
+    filter:drop-shadow(0 0 0.25rem #000000);
+}
+
+.左揃えの中央揃え{
+    width:40vmax;
+    text-align: left;
+    margin:0 auto;
+}
+
+.fouroneA{
+    box-shadow:0 0 0.5em #000000;
+    margin:2vw;
+}
+
+.fourone{
+    margin:0 auto;
+    display: inline;
+
+}
+
+.halfpagespace{
+    margin:50vh 0;
+}
+
+.pagespace{
+    margin:100vh 0;
+}
+
+.adana{
+    display:inline-block;
+    font-size:3rem;
+    font-family:'BIZ UDPゴシック','Noto Sans JP','ヒラギノ角ゴ ProN','meiryo','メイリオ', sans-serif;;
+    font-weight: bolder;
+    text-align: center;
+    color:#fff;
+    background: #0089ff;
+
+    position:sticky;
+    z-index:-1;
+    top:45%;
+}
+
+.adana h3{
+    font-size:1.25rem;
+}
+
+.talltxt{
+    display: inline-block;
+    transform:rotate(90deg);
+    margin-left:35vmax;
+    font-size:4rem;
+    font-family:'Futura','Century Gothic','Noto Sans JP','ヒラギノ角ゴ ProN','meiryo','メイリオ', sans-serif;;
+    font-weight: bolder;
+    border-bottom:0.5rem solid #0089ff;
+    padding:0 31.5vh;
+
+    position:sticky;
+    z-index:0;
+    top:46vh;
+}
+
+.yotxt{
+    display: inline-block;
+    font-size:4rem;
+    font-family:'Futura','Century Gothic','Noto Sans JP','ヒラギノ角ゴ ProN','meiryo','メイリオ', sans-serif;;
+    font-weight: bolder;
+    color:#fff;
+    background: #0089ff;
+    text-align: right;
+
+    position:sticky;
+    z-index:0;
+    top:25vh;
+    right:60vw;
+}
+
+.weighttxt{
+    display: inline-block;
+    margin-left:45vmax;
+    margin-bottom:50vh;
+    font-size:4rem;
+    font-family:'Futura','Century Gothic','Noto Sans JP','ヒラギノ角ゴ ProN','meiryo','メイリオ', sans-serif;;
+    font-weight: bolder;
+    color:#fff;
+    background: #0089ff;
+
+    position:sticky;
+    z-index:0;
+    top:75vh;
+}
+
+.gendertxt{
+    display: inline-block;
+    font-size:3rem;
+    font-family:'BIZ UDPゴシック','Noto Sans JP','ヒラギノ角ゴ ProN','meiryo','メイリオ', sans-serif;;
+    font-weight: bolder;
+    color:#fff;
+    background: #0089ff;
+    text-align: right;
+
+    position:sticky;
+    z-index:0;
+    top:15vh;
+    right:60vw;
+}
+
+.eyesighttxt{
+    display: inline-block;
+    font-size:1rem;
+    font-family:'Futura','Century Gothic','Noto Sans JP','ヒラギノ角ゴ ProN','meiryo','メイリオ', sans-serif;;
+    font-weight: bolder;
+    color:#fff;
+    background: #0089ff;
+    text-align: left;
+
+    position:sticky;
+    z-index:1;
+    top: 16vh;
+    right:40vw;
+}
+
+.tntxt{
+    display: inline-block;
+    font-size:1rem;
+    font-family:'Futura','Century Gothic','Noto Sans JP','ヒラギノ角ゴ ProN','meiryo','メイリオ', sans-serif;;
+    font-weight: bolder;
+    color:#fff;
+    background: #0089ff;
+    text-align: center;
+
+    position:sticky;
+    z-index:1;
+    top: 60vh;
+    right:48vw;
+}
